@@ -56,7 +56,7 @@ $.fn.sooperfish = function(op) {
     var parentLi = $('li:has(ul)', this);
     parentLi.each(function(){
       if (o.autoArrows) { //Add autoArrows if requested
-      $('>a',this).append('<span class="'+sf.c.arrowClass+'"></span>');
+      $('>label',this).append('<span class="'+sf.c.arrowClass+'"></span>');
       }
       $(this).addClass(sf.c.isParent);
     });
@@ -117,7 +117,7 @@ $.fn.sooperfish = function(op) {
       if (this.nodeName.toLowerCase() == 'ul') {
         var li = getActuator(this);
         $(li).addClass('hover');
-        $('> a', li).addClass('hover');
+        $('> label', li).addClass('hover');
       }
     }
     

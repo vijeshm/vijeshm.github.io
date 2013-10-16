@@ -28,28 +28,31 @@
 			</div>
 			<nav>
 				<ul class="sf-menu" id="nav">
-					<li class="selected"><a href="index.html">Home</a></li>
-					<li><a href="examples.html">Examples</a></li>
-					<li><a href="page.html">A Page</a></li>
-					<li><a href="another_page.html">Another Page</a></li>
-					<li><a href="#">Example Drop Down</a>
-					<ul>
-						<li><a href="#">Drop Down One</a></li>
-						<li><a href="#">Drop Down Two</a>
+					<li class="selected" id="tab_whoami" onclick="activate('whoami')"><label>Who am I?</label></li>
+					<li id="tab_whatdoido" onclick="activate('whatdoido')"><label>What do I do?</label></li> 
+					<!-- heavy pages need to be redirected -->
+					<li id="tab_mypublications" onclick="activate('mypublications')"><label>Publications</label></li>
+					<li id="tab_myphotography" onclick="activate('myphotography')"><label>Photography</label></li>
+					<li id="tab_myprojects" onclick="activate('myprojects')"><label>Projects</label></li>
+					<li id="tab_contactme" onclick="activate('contactme')"><label>Get in touch</label></li>
+					<!-- li id="tab_myprojects" onclick="activate('contactus')"><label>Example Drop Down</label>
 						<ul>
-							<li><a href="#">Sub Drop Down One</a></li>
-							<li><a href="#">Sub Drop Down Two</a></li>
-							<li><a href="#">Sub Drop Down Three</a></li>
-							<li><a href="#">Sub Drop Down Four</a></li>
-							<li><a href="#">Sub Drop Down Five</a></li>
+							<li><label>Drop Down One</label></li>
+							<li><label>Drop Down Two</label>
+								<ul>
+									<li><label>Sub Drop Down One</label></li>
+									<li><label>Sub Drop Down Two</label></li>
+									<li><label>Sub Drop Down Three</label></li>
+									<li><label>Sub Drop Down Four</label></li>
+									<li><label>Sub Drop Down Five</label></li>
+								</ul>
+							</li>
+							<li><label>Drop Down Three</label></li>
+							<li><label>Drop Down Four</label></li>
+							<li><label>Drop Down Five</label></li>
 						</ul>
-						</li>
-						<li><a href="#">Drop Down Three</a></li>
-						<li><a href="#">Drop Down Four</a></li>
-						<li><a href="#">Drop Down Five</a></li>
-					</ul>
 					</li>
-					<li><a href="contact.html">Contact Us</a></li>
+					<li id="tab_contactus"><label>Contact Us</label></li -->
 				</ul>
 			</nav>
 		</header>
@@ -73,10 +76,24 @@
 				</div>
 			</div>
 			<div class="content">
-				<h1>Welcome to the CSS3_simplistic template</h1>
-				<p>This simple, fixed width website template is released under a <a href="http://creativecommons.org/licenses/by/3.0">Creative Commons Attribution 3.0 Licence</a>. This means you are free to download and use it for personal and commercial projects. However, you <strong>must leave the 'design from css3templates.co.uk' link in the footer of the template</strong>.</p>
-				<p>This template is written entirely in <strong>HTML5</strong> and <strong>CSS3</strong>. The photos shown in this template were taken by me. You can view more free CSS3 web templates <a href="http://www.css3templates.co.uk/">here</a>.</p>
-				<p>This template is a fully documented 5 page website, with an <a href="examples.html">examples</a> page that gives examples of all the styles available with this design. There is also a working PHP contact form on the contact page. All of the photos were taken by me - use as you wish.</p>
+				<div id="whoami">
+					This is "Who am I?"
+				</div>
+				<div id="whatdoido">
+					This is "What do I do?"
+				</div>
+				<div id="mypublications">
+					This is "My Publication"
+				</div>
+				<div id="myphotography">
+					This is "My Photography"
+				</div>
+				<div id="myprojects">
+					This is "My Projects"
+				</div>
+				<div id="contactme">
+					This is "Contact Me"
+				</div>
 			</div>
 		</div>
 		<footer>
@@ -89,6 +106,7 @@
 	<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
 	<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
 	<script type="text/javascript" src="js/image_fade.js"></script>
+	<script type="text/javascript" src="js/vijeshJS.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
 	  $('ul.sf-menu').sooperfish();
