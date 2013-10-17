@@ -11,53 +11,15 @@ function activate(id) {
 	$('#tab_' + id).addClass('selected')
 }
 
-//function to shuffle the image names
-function shuffle(array) {
-	var currentIndex = array.length;
-    var temporaryValue;
-    var randomIndex;
-
-	// While there remain elements to shuffle...
-	while (0 !== currentIndex) {
-		// Pick a remaining element...
-		randomIndex = Math.floor(Math.random() * currentIndex);
-		currentIndex -= 1;
-
-		// And swap it with the current element.
-		temporaryValue = array[currentIndex];
-		array[currentIndex] = array[randomIndex];
-		array[randomIndex] = temporaryValue;
-	}
-	return array;
-}
-
 // hide all the contents of the tabs except the home tab
 for(var i = 0; i < contentDivs.length; i++) {
 	$('#' + contentDivs[i]).css({'display':'none'});
 }
 $('#whoami').css({'display':'block'});
 
-// create a random order for the images
-shuffle(imageNames);
-
-spanToChange = 1;
-imageIndex = 0;
-function changeBackground() {
-	if(spanToChange == 1) {
-		$('#background1').css('background-image', 'url("../images/' + imageNames[imageIndex] + '.jpg")');
-		spanToChange = 2;
-	} else {
-		$('#background2').css('background-image', 'url("../images/' + imageNames[imageIndex] + '.jpg")');
-		spanToChange = 1;
-	}
-
-	imageIndex += 1;
-	if(imageIndex == imageNames.length) {
-		imageIndex = 0;
-		shuffle(imageNames);
-	}
-	setTimeout(changeBackground, 10000); 
-	// this interval should be exactly the same as the time given to each span
-}
-
-changeBackground()
+$('body').css({
+	'background-image' : 'url("../images/' + imageNames[Math.floor(Math.random() * imageNames.length)] + '.jpg")',
+	'background-size' : 'cover',
+    'background-position' : '50% 50%',
+    'background-repeat': 'none'
+});
