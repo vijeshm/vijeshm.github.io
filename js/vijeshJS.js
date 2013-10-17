@@ -43,7 +43,6 @@ shuffle(imageNames);
 spanToChange = 1;
 imageIndex = 0;
 function changeBackground() {
-	console.log(spanToChange + ' ' + imageIndex + ' ' + imageNames[imageIndex] + '.jpg')
 	if(spanToChange == 1) {
 		$('#background1').css('background-image', 'url("../images/' + imageNames[imageIndex] + '.jpg")');
 		spanToChange = 2;
@@ -54,32 +53,11 @@ function changeBackground() {
 
 	imageIndex += 1;
 	if(imageIndex == imageNames.length) {
-		console.log('shuffling images...');
 		imageIndex = 0;
 		shuffle(imageNames);
-		console.log('new order: ' + imageNames);
 	}
-	setTimeout(changeBackground, 6000); 
+	setTimeout(changeBackground, 10000); 
 	// this interval should be exactly the same as the time given to each span
 }
 
 changeBackground()
-
-/*
-//change the backgroundURL periodically
-function changeBackground1(){
-	console.log('in function 1');
-	$('#background1').css('background-image', 'url("../images/' + Math.floor((Math.random()*6)+1) + '.jpg")');
-	setTimeout(changeBackground2, 3000);
-	setTimeout(changeBackground1, 6000);
-}
-
-function changeBackground2(){
-	console.log('in function 2');
-	$('#background2').css('background-image', 'url("../images/' + Math.floor((Math.random()*6)+1) + '.jpg")');
-	setTimeout(changeBackground1, 3000);
-	setTimeout(changeBackground2, 6000);
-}
-
-changeBackground1();
-*/
