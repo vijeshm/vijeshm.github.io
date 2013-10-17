@@ -11,12 +11,6 @@ function activate(id) {
 	$('#tab_' + id).addClass('selected')
 }
 
-// hide all the contents of the tabs except the home tab
-for(var i = 0; i < contentDivs.length; i++) {
-	$('#' + contentDivs[i]).css({'display':'none'});
-}
-$('#whoami').css({'display':'block'});
-
 $('body').css({
 	'background-image' : 'url("../images/' + imageNames[Math.floor(Math.random() * imageNames.length)] + '.jpg")',
 	'background-size' : 'cover',
