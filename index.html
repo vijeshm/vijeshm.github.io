@@ -6,17 +6,16 @@
 	<meta name="keywords" content="website keywords, website keywords" />
 	<!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" /-->
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/backgroundAnimation.css">
 	<!-- modernizr enables HTML5 elements and feature detects -->
 	<script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
 </head>
 
 <body>
-	<!-- div class="gallery" position="float" z-index="-1">
-	    <ul class="images">
-			<li class="show"><img width="950" height="300" src="images/1.jpg" alt="simplistic 1" /></li>
-			<li><img width="950" height="300" src="images/2.jpg" alt="simplistic 2" /></li>
-	    </ul>
-	</div -->
+	<ul class="cb-slideshow">
+        <li><span id="background1">Image 01</span></li>
+        <li><span id="background2">Image 02</span></li>
+    </ul>
 	<div id="main">
 		<header>
 			<div id="logo">
@@ -31,8 +30,8 @@
 					<li class="selected" id="tab_whoami" onclick="activate('whoami')"><label>Who am I?</label></li>
 					<li id="tab_whatdoido" onclick="activate('whatdoido')"><label>What do I do?</label></li> 
 					<!-- heavy pages need to be redirected -->
-					<li id="tab_mypublications" onclick="activate('mypublications')"><label>Publications</label></li>
 					<li id="tab_myphotography" onclick="activate('myphotography')"><label>Photography</label></li>
+					<li id="tab_myresearch" onclick="activate('myresearch')"><label>Research</label></li>
 					<li id="tab_myprojects" onclick="activate('myprojects')"><label>Projects</label></li>
 					<li id="tab_contactme" onclick="activate('contactme')"><label>Get in touch</label></li>
 				</ul>
@@ -55,29 +54,21 @@
 					<h5>July 1st, 2013</h5>
 					<p>2012 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
 				</div>
-				<div class="sidebar">
-					<h3>Useful Links</h3>
-					<ul>
-						<li><a href="#">First Link</a></li>
-						<li><a href="#">Another Link</a></li>
-						<li><a href="#">And Another</a></li>
-						<li><a href="#">One More</a></li>
-						<li><a href="#">Last One</a></li>
-					</ul>
-				</div>
 			</div>
 			<div class="content">
 				<div id="whoami">
-					This is "Who am I?"
+					This is "Who am I?"<br/>
+					Use <a href="http://wowslider.com/javascript-slideshow-quiet-rotate-demo.html">this</a> for background animation using JQuery.
 				</div>
 				<div id="whatdoido">
 					This is "What do I do?"
 				</div>
-				<div id="mypublications">
-					This is "My Publication"
+				<div id="myresearch">
+					This is "My Research"
 				</div>
 				<div id="myphotography">
-					This is "My Photography"
+					This is "My Photography"<br/>
+					Use <a href="http://wowslider.com/demo.html">wowslider</a> for displaying.
 				</div>
 				<div id="myprojects">
 					This is "My Projects"
@@ -96,7 +87,6 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
 	<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-	<script type="text/javascript" src="js/image_fade.js"></script>
 	<script type="text/javascript" src="js/vijeshJS.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
