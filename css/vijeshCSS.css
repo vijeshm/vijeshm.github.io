@@ -2,3 +2,16 @@
 	/* dont display anything div, except for the Who Am I */
 	display: none;
 }
+
+#backgroundContainer {
+	background-image: url('../images/1.jpg');
+	background-size : cover;
+    background-position : 50% 50%;
+    background-repeat: none;
+}
+
+#backgroundChild {
+	background: rgb(0, 0, 0);
+	transition: background 2s linear;
+    -webkit-transition: background 2s linear;
+}
