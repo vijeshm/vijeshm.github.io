@@ -15,5 +15,6 @@ $('body').css({
  	'background-image' : 'url("../images/' + imageNames[Math.floor(Math.random() * imageNames.length)] + '.jpg")',
 	'background-size' : 'cover',
 	'background-position' : '50% 50%',
-	'background-repeat': 'none'
+	'background-repeat': 'none',
+	'background-attachment' : 'fixed'
 });
