@@ -8,7 +8,6 @@ div.galleriffic_container {
 div.galleriffic_content {
 	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
 	display: none;
-	float : right;
 }
 div.galleriffic_content a, div.navigation a {
 	text-decoration: none;
@@ -32,7 +31,8 @@ div.nav-controls {
 }
 div.slideshow-container {
 	position: relative;
-	clear: both;
+	left: 200px;
+	top: 40px;
 	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
 }
 div.loader {
@@ -46,17 +46,15 @@ div.loader {
 	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
 }
 div.slideshow {
-
+	margin: auto;
 }
 div.slideshow span.image-wrapper {
 	display: block;
 	position: absolute;
 	top: 0;
-	left: 0;
 }
 div.slideshow a.advance-link {
 	display: block;
-	width: 550px;
 	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
 	line-height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
 	text-align: center;
@@ -65,16 +63,16 @@ div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.sli
 	text-decoration: none;
 }
 div.slideshow img {
-	vertical-align: middle;
-	border: 1px solid #ccc;
+	vertical-align: top;
 }
 div.download {
 	float: right;
 }
 div.caption-container {
 	position: relative;
-	clear: left;
+	left: 200px;
 	height: 75px;
+	display: none; /*to disable the caption*/
 }
 span.image-caption {
 	display: block;
@@ -112,6 +110,7 @@ a.thumb {
 	padding: 2px;
 	display: block;
 	border: 1px solid #ccc;
+	border-radius: 5px;
 }
 ul.thumbs li.selected a.thumb {
 	background: #000;
@@ -122,6 +121,8 @@ a.thumb:focus {
 ul.thumbs img {
 	border: none;
 	display: block;
+	width: 50px;
+	height: 50px;
 }
 div.pagination {
 	clear: both;
@@ -138,15 +139,17 @@ div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
 	float: left;
 	margin-right: 2px;
 	padding: 4px 7px 2px 7px;
-	border: 1px solid #ccc;
+	background-color: rgba(100, 100, 100, 0.5);
+	border-radius: 5px;
+	color: #aaa;
 }
 div.pagination a:hover {
-	background-color: #eee;
+	background-color: #777;
 	text-decoration: none;
 }
 div.pagination span.current {
 	font-weight: bold;
-	background-color: #000;
+	background-color: #222;
 	border-color: #000;
 	color: #fff;
 }
