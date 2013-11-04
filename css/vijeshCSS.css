@@ -2,6 +2,28 @@
 	/* dont display anything div, except for the Who Am I */
 	display: none;
 }
+
+#contactme #information {
+	margin: auto;
+	border: 1px solid #FFF;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-family: sans-serif;
+}
+
+#contactme #information tr {
+	text-align: left;	
+}
+
+#contactme #information  tr td a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+#contactme #information  tr td a:hover {
+	text-decoration: underline;
+}
+
 div.galleriffic_container {
 
 }
