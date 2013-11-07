@@ -33,7 +33,6 @@
 			<nav>
 				<ul class="sf-menu" id="nav">
 					<li class="selected" id="tab_whoami" onclick="activate('whoami')"><label>Who am I?</label></li>
-					<li id="tab_whatdoido" onclick="activate('whatdoido')"><label>What do I do?</label></li> 
 					<!-- heavy pages need to be redirected -->
 					<li id="tab_myphotography" onclick="activate('myphotography')"><label>Photography</label></li>
 					<li id="tab_myresearch" onclick="activate('myresearch')"><label>Research</label></li>
@@ -65,10 +64,15 @@
 			</div>
 			<div class="content">
 				<div id="whoami">
-					This is "Who am I?"<br/>
-				</div>
-				<div id="whatdoido">
-					This is "What do I do?"
+					<div id="whoamiBackground">
+						<table id="hashtags">
+						</table>
+					</div>
+					<div id="whoamiForeground">
+						Hi there..
+						<img src="images/profile.png" id="profilepic"/>
+						I'm Vijesh, and I hail from Bangalore, India.
+					</div>
 				</div>
 				<div id="myresearch">
 					This is "My Research"

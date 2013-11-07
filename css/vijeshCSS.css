@@ -1,6 +1,40 @@
-#whatdoido, #myresearch, #myphotography, #myprojects, #contactme {
+#myresearch, #myphotography, #myprojects, #contactme {
 	/* dont display anything div, except for the Who Am I */
 	display: none;
+}
+
+#whoami {
+	text-align: center;
+	margin: auto;
+	font: 120% 'Yanone Kaffeesatz', arial, sans-serif;
+	height: 300px;
+}
+
+#whoami #whoamiBackground {
+	z-index: -1;
+	opacity: 0.2;
+}
+
+#whoami #whoamiForeground {
+	z-index: 1;
+	position: relative;
+	top: -265px;
+	width: 275px;
+	height: 175px;
+	margin: auto; 
+	_background-color: rgba(0, 0, 0, 0.5);
+	_border-radius: 10px;
+}
+
+#hashtags {
+	width: 100%;
+	height: 300px;
+}
+
+#profilepic {
+	width: 100px;
+	display: block;
+	margin: 15px auto 15px auto;
 }
 
 #contactme #information {
