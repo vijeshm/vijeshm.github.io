@@ -1,6 +1,7 @@
 #myresearch, #myphotography, #myprojects, #contactme {
 	/* dont display anything div, except for the Who Am I */
 	display: none;
+	height: 300px;
 }
 
 #whoami {
@@ -26,6 +27,10 @@
 	_border-radius: 10px;
 }
 
+#myresearch {
+	height: 400px;
+}
+
 #hashtags {
 	width: 100%;
 	height: 300px;
@@ -35,6 +40,39 @@
 	width: 100px;
 	display: block;
 	margin: 15px auto 15px auto;
+}
+
+.myresearchItem {
+	width: 600px;
+	height: 135px;
+	border-radius: 15px;
+	background-color: rgba(0, 0, 0, 0.65);
+	margin: 10px auto 10px auto;
+}
+
+.myresearchItem .researchContent{
+	position: relative;
+	width: 580px;
+	top: 10px;
+	left: 10px;
+}
+
+.myresearchItem .researchContent .researchHeading {
+	font-size: 18px;
+}
+
+.myresearchItem .researchContent .researchAbstract {
+	text-align: justify;
+	font-size: 13px;
+}
+
+.myresearchItem .researchContent .researchHeading a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.myresearchItem .researchContent .researchAbstract a {
+	color: #AAA;
 }
 
 #contactme #information {
