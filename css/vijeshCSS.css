@@ -31,6 +31,10 @@
 	height: 400px;
 }
 
+#myprojects {
+	height: 800px;
+}
+
 #hashtags {
 	width: 100%;
 	height: 300px;
@@ -46,7 +50,7 @@
 	width: 600px;
 	height: 135px;
 	border-radius: 15px;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba(0, 0, 0, 0.5);
 	margin: 10px auto 10px auto;
 }
 
@@ -73,6 +77,34 @@
 
 .myresearchItem .researchContent .researchAbstract a {
 	color: #AAA;
+}
+
+.myprojectItem {
+	width: 600px;
+	height: 70px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;;
+	margin: 15px auto 15px auto;
+}
+
+.myprojectItem .projectContent{
+	position: relative;
+	width: 580px;
+	top: 10px;
+	left: 10px;
+}
+
+.myprojectItem .projectContent .projectName {
+	font-size: 17px;
+}
+
+.myprojectItem .projectContent .projectName a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.myprojectItem .projectContent .projectTags {
+	font-size: 13px;
 }
 
 #contactme #information {
