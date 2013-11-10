@@ -1,3 +1,26 @@
+.newsItem {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.newsItem .newsContent {
+	padding: 10px;
+}
+
+.newsItem .newsContent .newsHeading{
+	font-size: 15px;
+}
+
+.newsItem .newsContent .newsDate {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.newsItem .newsContent .newsDescription {
+	font-size: 13px;
+	margin-top: 10px;
+}
+
 #myresearch, #myphotography, #myprojects, #contactme {
 	/* dont display anything div, except for the Who Am I */
 	display: none;
