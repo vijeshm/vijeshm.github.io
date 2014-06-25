@@ -1,0 +1,89 @@
+table tr td img {
+	width: 200px;
+	margin: 5px;
+	border-radius: 10px;
+	border: 4px solid rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+table tr {
+	text-align: center;
+}
+
+table {
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+#calendarHeader {
+	text-align: center;
+	color: #FFF;
+	margin: 10px;
+	font: 200% 'Yanone Kaffeesatz', arial, sans-serif;
+}
+
+#downloadCalendar {
+	text-align: center;
+	margin: 10px;
+}
+
+#nextCalendar {
+	text-align: right;
+	margin: 10px;
+}
+
+#prevCalendar {
+	text-align: left;
+	margin: 10px;
+}
+
+#calendarLinks a:hover  {
+	background-color: rgba(255, 255, 255, 0.6);
+	color: #000;
+}
+
+#calendarLinks {
+	font: 80% 'Yanone Kaffeesatz', arial, sans-serif;
+}
+
+#calendarLinks a {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 8px;
+	border-radius: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#modal {
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+#close span {
+	background-color: #FFF;
+	border-radius: 10px;
+	font: 100% 'Yanone Kaffeesatz', arial, sans-serif;
+	cursor: pointer;
+}
+
+#close {
+	z-index: 3;
+	position: relative;
+	left: 30%;
+	top: 13px;
+}
+
+#magnified {
+	position: relative;
+	margin: auto;
+	width: 60%;
+	border: 5px solid white;
+	border-radius: 10px;
+}
