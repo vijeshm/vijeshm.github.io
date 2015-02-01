@@ -1,616 +1,485 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Vijesh Mohan</title>
-	<meta name="description" content="Vijesh Mohan - Personal Website and Portfolio" />
-	<meta name="keywords" content="Vijesh, Mohan, Vijesh Mohan, Portfolio, Personal Website, Photography, Research, Gephi, GSoC, Graphs" />
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/vijeshCSS.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<!-- link rel="stylesheet" href="galleriffic/css/basic.css" type="text/css" />
-	<link rel="stylesheet" href="galleriffic/css/galleriffic-2.css" type="text/css" / -->
+    <title>Vijesh Mohan</title>
 
-	<!-- modernizr enables HTML5 elements and feature detects -->
-	<script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png?v=1"/>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<!-- script type="text/javascript" src="galleriffic/js/jquery-1.3.2.js"></script-->
-	<script type="text/javascript" src="galleriffic/js/jquery.galleriffic.js"></script>
-	<script type="text/javascript" src="galleriffic/js/jquery.opacityrollover.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push(['_setAccount', 'UA-45616601-1']);
-		_gaq.push(['_setDomainName', 'vijeshm.in']);
-		_gaq.push(['_trackPageview']);
+    <!-- Custom CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
 
-		(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
+    <!-- Bootstrap Image Gallery CSS -->
+    <link href="css/blueimp-gallery.min.css" rel="stylesheet">
+    <link href="css/bootstrap-image-gallery.min.css" rel="stylesheet">
+    <base target="_blank">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body>
-	<div id="main">
-		<header>
-			<div id="logo">
-				<div id="logo_text">
-					<!-- class="logo_colour", allows you to change the colour of the text -->
-					<h1><a href="index.html">Vijesh Mohan</a></h1>
-					<h2>Engineer | Photographer | Researcher | A Restless Soul</h2>
-				</div>
-			</div>
-			<nav>
-				<ul class="sf-menu" id="nav">
-					<li class="selected" id="tab_whoami" onclick="activate('whoami')"><label>Who am I?</label></li>
-					<!-- heavy pages need to be redirected -->
-					<li id="tab_myphotography" onclick="activate('myphotography')"><label>Photography</label></li>
-					<li id="tab_myresearch" onclick="activate('myresearch')"><label>Research</label></li>
-					<li id="tab_myprojects" onclick="activate('myprojects')"><label>Projects</label></li>
-					<li id="tab_contactme" onclick="activate('contactme')"><label>Get in touch</label></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="site_content">
-			<div id="sidebar_container">
-				<div class="sidebar">
-					<table width="100%">
-						<tr>
-							<td><a href="http://github.com/vijeshm" target="_new"><img src="images/github.png" width="25px"></img></a></td>
-							<td><a href="http://flickr.com/vijeshm" target="_new"><img src="images/flickr.png" width="25px"></img></a></td>
-							<td><a href="http://linkedin.com/pub/vijesh-m/48/683/780" target="_new"><img src="images/linkedin.png" width="25px"></img></a></td>
-							<td><a href="http://facebook.com/mv.vijesh" target="_new"><img src="images/facebook.png" width="25px"></img></a></td>
-							<td><a href="http://twitter.com/mvvijesh" target="_new"><img src="images/twitter.png" width="25px"></img></a></td>
-							<td><a href="https://plus.google.com/114081513617733356807/posts" target="_new"><img src="images/googleplus.png" width="25px"></img></a></td>
-							<!-- td>&nbsp;&nbsp;&nbsp;</td>
-							<td><a href="resources/vijesh_m_resume_v4.pdf" target="_new"><img src="images/cv.png" width="25"></img></a></td -->
-						</tr>
-					</table>
-					<h3>Latest News</h3>
-					<div class="newsItem">
-						<div class="newsContent">
-							<div class="newsHeading">
-								2014 Calendar
-							</div>
-							<div class="newsDate">
-								Dec 21st, 2013
-							</div>
-							<div class="newsDescription">
-								Stay tuned for the upcoming release of the 2014 calendar.
-							</div>
-						</div>
-					</div>
-					&nbsp;
-					<div class="newsItem">
-						<div class="newsContent">
-							<div class="newsHeading">
-								New Website Launched
-							</div>
-							<div class="newsDate">
-								Nov 10th, 2013
-							</div>
-							<div class="newsDescription">
-								Take a look around and let me know what you think.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="content">
-				<div id="whoami">
-					<div id="whoamiBackground">
-						<table id="hashtags" cellpadding="0" cellspacing="0">
-						</table>
-					</div>
-					<div id="whoamiForeground">
-						Hi there..
-						<img src="images/profile2_thumb.png" id="profilepic"/>
-						I'm Vijesh, and I hail from Bangalore, India.
-					</div>
-				</div>
-				<div id="myphotography">
-					<div id="gallerific_container">
-						<div id="thumbs" class="navigation">
-						<ul class="thumbs noscript">
-							<!-- li>
-								<a class="thumb" name="" href="link to large image - max height = 502px, max width = ___px " title="title">
-									<img src="link to thumbnail image - recommended dimensions: 50 x 50"/>
-								</a>
-							</li -->
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Vijesh Mohan</a>
+            </div>
 
-							<li>
-								<a class="thumb" name="" href="images/photos/45.jpg" title="">
-									<img src="images/thumbnails/45.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/44.jpg" title="">
-									<img src="images/thumbnails/44.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/43.jpg" title="">
-									<img src="images/thumbnails/43.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/42.jpg" title="">
-									<img src="images/thumbnails/42.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/41.jpg" title="">
-									<img src="images/thumbnails/41.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/40.jpg" title="">
-									<img src="images/thumbnails/40.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/39.jpg" title="">
-									<img src="images/thumbnails/39.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/38.jpg" title="">
-									<img src="images/thumbnails/38.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/37.jpg" title="">
-									<img src="images/thumbnails/37.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/36.jpg" title="">
-									<img src="images/thumbnails/36.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/35.jpg" title="">
-									<img src="images/thumbnails/35.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/34.jpg" title="">
-									<img src="images/thumbnails/34.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/33.jpg" title="">
-									<img src="images/thumbnails/33.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/32.jpg" title="">
-									<img src="images/thumbnails/32.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/31.jpg" title="">
-									<img src="images/thumbnails/31.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/30.jpg" title="">
-									<img src="images/thumbnails/30.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/29.jpg" title="">
-									<img src="images/thumbnails/29.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/28.jpg" title="">
-									<img src="images/thumbnails/28.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/27.jpg" title="">
-									<img src="images/thumbnails/27.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/26.jpg" title="">
-									<img src="images/thumbnails/26.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/25.jpg" title="">
-									<img src="images/thumbnails/25.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/24.jpg" title="">
-									<img src="images/thumbnails/24.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/23.jpg" title="">
-									<img src="images/thumbnails/23.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/22.jpg" title="">
-									<img src="images/thumbnails/22.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/21.jpg" title="">
-									<img src="images/thumbnails/21.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/20.jpg" title="">
-									<img src="images/thumbnails/20.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/19.jpg" title="">
-									<img src="images/thumbnails/19.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/18.jpg" title="">
-									<img src="images/thumbnails/18.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/17.jpg" title="">
-									<img src="images/thumbnails/17.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/16.jpg" title="">
-									<img src="images/thumbnails/16.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/15.jpg" title="">
-									<img src="images/thumbnails/15.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/14.jpg" title="">
-									<img src="images/thumbnails/14.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/13.jpg" title="">
-									<img src="images/thumbnails/13.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/12.jpg" title="">
-									<img src="images/thumbnails/12.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/11.jpg" title="">
-									<img src="images/thumbnails/11.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/10.jpg" title="">
-									<img src="images/thumbnails/10.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/9.jpg" title="">
-									<img src="images/thumbnails/9.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/8.jpg" title="">
-									<img src="images/thumbnails/8.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/7.jpg" title="">
-									<img src="images/thumbnails/7.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/6.jpg" title="">
-									<img src="images/thumbnails/6.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/5.jpg" title="">
-									<img src="images/thumbnails/5.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/4.jpg" title="">
-									<img src="images/thumbnails/4.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/3.jpg" title="">
-									<img src="images/thumbnails/3.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/2.jpg" title="">
-									<img src="images/thumbnails/2.jpg"/>
-								</a>
-							</li>
-							<li>
-								<a class="thumb" name="" href="images/photos/1.jpg" title="">
-									<img src="images/thumbnails/1.jpg"/>
-								</a>
-							</li>
-						</ul>
-						</div>
-						<div id="gallery" class="galleriffic_content">
-							<div id="controls" class="controls"></div>
-							<div class="slideshow-container">
-								<div id="loading" class="loader"></div>
-								<div id="slideshow" class="slideshow"></div>
-							</div>
-							<div id="caption" class="caption-container"></div>
-						</div>
-					</div>
-				</div>
-				<div id="myresearch">
-					<div class="myresearchItem">
-						<div class="researchContent">
-							<div class="researchHeading">
-								<a href="http://bit.ly/PathConcatenation" target="_new">A Navigation Algorithm Inspired by Human Navigation</a>
-							</div>
-							<div class="researchAbstract">
-								Human navigation has been a topic of interest in spatial cognition from the past few decades. It has been experimentally observed that humans accomplish the task of way-finding a destination in an unknown environment by recognizing landmarks. Investigations using network analytic techniques reveal that humans, when asked to way-find their destination, learn the top ranked nodes of a network. In this paper... <!-- , we report a study simulating the strategy used by humans to recognize the centers of a network. We show that the paths obtained from our simulation has the same properties as the paths obtained in human based experiment. The simulation thus performed leads to a novel way of pathfinding in a network. We discuss the performance of our method and compare it with the existing techniques to find a path between a pair of nodes in a network. -->
-								<br />
-								<a href="http://bit.ly/PathConcatenation" target="_new">more..</a>
-							</div>
-						</div>
-					</div>
-					<div class="myresearchItem">
-						<div class="researchContent">
-							<div class="researchHeading">
-								<a href="http://bit.ly/ScaleFreePrediction" target="_new">Prediction of Arrival of Nodes in a Scale Free Network</a>
-							</div>
-							<div class="researchAbstract">
-								Most of the networks observed in real life obey power-law degree distribution. It is hypothesized that the emergence of such a degree distribution is due to preferential attachment of the nodes. Barabasi-Albert model is a generative procedure that uses preferential attachment based on degree and one can use this model to generate networks with power-law degree distribution. In this model, the network is assumed to grow one node every time step. After the evolution... <!-- of such a network, it is impossible for one to predict the exact order of node arrivals. We present in this article, a novel strategy to partially predict the order of node arrivals in such an evolved network. We show that our proposed method outperforms other centrality measure based approaches. We bin the nodes and predict the order of node arrivals between the bins with an accuracy of above 80%. -->
-								<br />
-								<a href="http://bit.ly/ScaleFreePrediction" target="_new">more..</a>
-							</div>
-						</div>
-					</div>
-					<div class="myresearchItem">
-						<div class="researchContent">
-							<div class="researchHeading">
-								<a href="https://github.com/vijeshm/recommendation-algorithm-fyp" target="_new"> A Weight-Based Personalized Recommendation using Idiosyncratic and Collaborative Filtering
-								</a>
-							</div>
-							<div class="researchAbstract">
-								Personalized Recommendations serve as an important ingredient for several web based systems. These systems generally house a knowledge base containing the metadata about items and users. In this paper, we present an approach for the purpose of... <!-- generating personalized recommendations to users. We've developed a... network-based solution that establishes relations between items and performs dimensionality reduction on the dataset. Alongside dimensionality reduction, we perform user profiling to determine the relative importance that a particular user gives to individual attributes, as well as the values assumed by the corresponding attribute. We define a characteristic feature for each user that depicts how idiosyncratic the user is, in choosing the items to consume. We split the process of recommendation into three stages: idiosyncratic recommendation, collaborative filtering and hybridization of the results as a weighted combination, with the idiosyncratic behavior of the user chosen as the weight.
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#photography">Photography</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Get In Touch</a>
+                    </li>
+                </ul>
+                <a href="https://github.com/vijeshm/startbootstrap-agency"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-								In our experiments, we have used the MovieLens dataset in combination with the metadata about the movies from IMDB. For experimental purposes, we split the aggregated dataset into two parts: training set and the test set, comprising of 70 percent and 30 percent of the user data respectively. Finally, from the hybridized scores thus obtained on the test dataset, it is possible to predict the probable rating that a user might give to a movie. For the purpose of evaluation of the results, we use Root Mean Square Error as a metric. We could achieve a RMS error of $0.9031$ in predicting the ratings of the movies. -->
+    <!-- Header -->
+    <header data-parallax>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-image"><img src="img/mylogo.png"></div>
+                <div class="intro-lead-in">Vijesh Mohan</div>
+                <div class="intro-heading">Engineer | Photographer | Researcher | A Restless Soul</div>
+                <div class="intro-social-links">
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td><a href="http://github.com/vijeshm" target="_new"><img src="img/github.png"></a></td>
+                                <td><a href="http://flickr.com/vijeshm" target="_new"><img src="img/flickr.png"></a></td>
+                                <td><a href="http://linkedin.com/pub/vijesh-m/48/683/780" target="_new"><img src="img/linkedin.png"></a></td>
+                                <td><a href="http://facebook.com/mv.vijesh" target="_new"><img src="img/facebook.png"></a></td>
+                                <td><a href="http://twitter.com/edbidangi" target="_new"><img src="img/twitter.png"></a></td>
+                                <td><a href="https://plus.google.com/114081513617733356807/posts" target="_new"><img src="img/googleplus.png"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a href="#photography" class="page-scroll btn btn-xl">Know me better</a>
+            </div>
+        </div>
+    </header>
 
-								<br />
-								<a href="https://github.com/vijeshm/recommendation-algorithm-fyp" target="_new">more..</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="myprojects">
-					Here's a listing of the projects that I've been working on. They're all open sourced. Feel free to contact me if you wanna know more about a project, or perhaps contribute code.
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/gephi-gsoc13-legendmodule/tree/legend-maven" target="_new">Google Summer of Code - 2013</a>
-							</div>
-							<div class="projectTags">
-								Tags: gephi, legend module, java
-							</div>
-						</div>
-					</div>
+    <!-- Photography Section -->
+    <section id="photography">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Photography</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted">
+                        <p>"You don't take a photograph, you make it." - Ansel Adams</p>
+                        <p>Canon EOS 550D | 18-55mm | 50mm f1.8 | 55-250mm</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery">
+                        <!-- The container for the modal slides -->
+                        <div class="slides"></div>
+                        <!-- Controls for the borderless lightbox -->
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+                        <div class="modal fade">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title"></h4>
+                                    </div>
+                                    <div class="modal-body next"></div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default pull-left prev">
+                                            <i class="glyphicon glyphicon-chevron-left"></i>
+                                            Previous
+                                        </button>
+                                        <button type="button" class="btn btn-primary next">
+                                            Next
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="photographs">
+                        <!-- The photographs will be populated by a script -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="http://bit.ly/PathConcatenation" target="_new">A Navigation Algorithm Inspired by Human Navigation</a>
-							</div>
-							<div class="projectTags">
-								Tags: navigation algorithm, human navigation, complex networks, graph theory, reinforcement learning
-							</div>
-						</div>
-					</div>
+    <!-- Projects Grid Section -->
+    <section id="projects" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <h3 class="section-subheading text-muted">"If you optimize everything, you will always be unhappy." - Donald Knuth</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/gephi-gsoc13-legendmodule/tree/legend-maven" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/gsoc-gephi-2013.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>Google Summer of Code - 2013</h4>
+                        <p class="text-muted">Gephi | Legend Module | Java</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="http://bit.ly/PathConcatenation" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/navigation.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>A Navigation Algorithm Inspired by Human Navigation</h4>
+                        <p class="text-muted">Navigation Algorithm | Complex Networks | Reinforcement Learning</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="http://bit.ly/ScaleFreePrediction" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/scalefreenetwork.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>Prediction Of Arrival Of Nodes In A Scale Free Network</h4>
+                        <p class="text-muted">Scale Free Networks, Probabilistic Prediction, Differential Core Centrality</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/vijeshm.github.io" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/vijeshme.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>vijesh.me</h4>
+                        <p class="text-muted">NodeJS | Bower | Bootstrap | jQuery | Grunt | github.io</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/recommendation-algorithm-fyp" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div-->
+                        <img src="img/projects/fyp.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>A Weight-Based Personalized Recommendation</h4>
+                        <p class="text-muted">Dimensionality Reduction | MovieLens | User Profiling | Network based Idiosyncratic and Collaborative Recommendation</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/bidirectionalSearch" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/2rawrandomwalk.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>Parallel Search Algorithm in Power Law Networks</h4>
+                        <p class="text-muted">Navigation Algorithm | Complex Networks | Graph Theory and Algorithms | Greedy Algorithm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/eezyReport" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/eezyreport.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>EezyReport</h4>
+                        <p class="text-muted">Report Generation | PDFlatex | XML | Python</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/tweebuzz" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/tweebuzz.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>TweeBuzz - Local Trends in Twitter</h4>
+                        <p class="text-muted">Twitter | oAuth | synonym-based ranking</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 project-item">
+                    <a href="https://github.com/vijeshm/boredomDetectionInAClassroom" class="project-link">
+                        <!-- div class="project-hover">
+                            <div class="project-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div -->
+                        <img src="img/projects/boredom.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="project-caption">
+                        <h4>Boredom Detection in a classroom</h4>
+                        <p class="text-muted">Quantization of Boredom Level | Difference Method | Noise Computation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="http://bit.ly/ScaleFreePrediction" target="_new">Prediction Of Arrival Of Nodes In A Scale Free Network</a>
-							</div>
-							<div class="projectTags">
-								Tags: scale free networks, probabilistic prediction, differential core centrality
-							</div>
-						</div>
-					</div>
+    <!-- Research Section -->
+    <section id="research">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Research</h2>
+                    <h3 class="section-subheading text-muted">"If we knew what it was we were doing, it would not be called research, would it?" - Albert Einstein</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-8 research-element">
+                    <div class="research-title">
+                        <a href="http://bit.ly/PathConcatenation">A Navigation Algorithm Inspired by Human Navigation</a>
+                    </div>
+                    <div class="research-tags">
+                        <ul>
+                            <li>Navigation Algorithm</li>
+                            <li>Complex Networks</li>
+                            <li>Reinforcement Learning</li>
+                        </ul>
+                    </div>
+                    <div class="research-description">
+                        Human navigation has been a topic of interest in spatial cognition from the past few decades. It has been experimentally observed that humans accomplish the task of way-finding a destination in an unknown environment by recognizing landmarks. Investigations using network analytic techniques reveal that humans, when asked to way-find their destination, learn the top ranked nodes of a network. In this paper... <a href="http://bit.ly/PathConcatenation">(more)</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-8 research-element">
+                    <div class="research-title">
+                        <a href="http://bit.ly/ScaleFreePrediction">Prediction of Arrival of Nodes in a Scale Free Network</a>
+                    </div>
+                    <div class="research-tags">
+                        <ul>
+                            <li>Scale Free Networks</li>
+                            <li>Probabilistic Prediction</li>
+                            <li>Differential Core Centrality</li>
+                        </ul>
+                    </div>
+                    <div class="research-description">
+                        Most of the networks observed in real life obey power-law degree distribution. It is hypothesized that the emergence of such a degree distribution is due to preferential attachment of the nodes. Barabasi-Albert model is a generative procedure that uses preferential attachment based on degree and one can use this model to generate networks with power-law degree distribution. In this model, the network is assumed to grow one node every time step. After the evolution... <a href="http://bit.ly/ScaleFreePrediction">(more)</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    
+                </div>
+                <div class="col-md-8 research-element">
+                    <div class="research-title">
+                        <a href="https://github.com/vijeshm/recommendation-algorithm-fyp">A Weight-Based Personalized Recommendation using Idiosyncratic and Collaborative Filtering</a>
+                    </div>
+                    <div class="research-tags">
+                        <ul>
+                            <li>Dimensionality Reduction</li>
+                            <li>MovieLens</li>
+                            <li>User Profiling</li>
+                            <li>Network based Idiosyncratic and Collaborative Recommendation</li>
+                        </ul>
+                    </div>
+                    <div class="research-description">
+                        Personalized Recommendations serve as an important ingredient for several web based systems. These systems generally house a knowledge base containing the metadata about items and users. In this paper, we present an approach for the purpose of...  <a href="https://github.com/vijeshm/recommendation-algorithm-fyp">(more)</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/vijeshm.github.io" target="_new">vijeshm.in</a>
-							</div>
-							<div class="projectTags">
-								Tags: portfolio, github.io, css3templates, galleriffic
-							</div>
-						</div>
-					</div>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Get In Touch</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    
+                </div>
+                <div class="col-lg-4 contact-elements">
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/email.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="mailto:mv.vijesh@gmail.com">mv.vijesh@gmail.com</a></div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/phone.png"></div>
+                        <div class="col-md-6 col-xs-4">+91-9901940119</div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/github.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="github/">vijesh.me/github</a></div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/linkedin.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="linkedin/">vijesh.me/linkedin</a></div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/facebook.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="facebook/">vijesh.me/facebook</a></div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/twitter.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="twitter/">vijesh.me/twitter</a></div>
+                    </div>
+                    <div class="row contact-element">
+                        <div class="col-md-6 col-xs-4 contact-icon"><img src="img/googleplus.png"></div>
+                        <div class="col-md-6 col-xs-4"><a href="gplus/">vijesh.me/gplus</a></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/recommendation-algorithm-fyp" target="_new">A Weight-Based Personalized Recommendation</a>
-							</div>
-							<div class="projectTags">
-								Tags: dimensionality reduction, movieLens, user profiling, network based idiosyncratic and collaborative recommendation
-							</div>
-						</div>
-					</div>
+    <!-- footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4">
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/bidirectionalSearch" target="_new">Parallel Search Algorithm in Power Law Networks</a>
-							</div>
-							<div class="projectTags">
-								Tags:  navigation algorithm, complex networks, graph theory and algorithms, greedy algorithm
-							</div>
-						</div>
-					</div>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+            </div>
+        </div>
+    </footer -->
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/eezyReport" target="_new">EezyReport</a>
-							</div>
-							<div class="projectTags">
-								Tags: report generation, pdflatex, xml, python
-							</div>
-						</div>
-					</div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/tweebuzz" target="_new">TweeBuzz - Local Trends in Twitter</a>
-							</div>
-							<div class="projectTags">
-								Tags: Twitter, oAuth, synonym-based ranking
-							</div>
-						</div>
-					</div>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-					<div class="myprojectItem">
-						<div class="projectContent">
-							<div class="projectName">
-								<a href="https://github.com/vijeshm/boredomDetectionInAClassroom" target="_new">Boredom Detection in a classroom</a>
-							</div>
-							<div class="projectTags">
-								Tags: quantization of boredom level, difference method, noise computation
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="contactme">
-					<table id="information" cellspacing="10">
-						<tr>
-							<td><img src="images/email.png" width="25px"></td>
-							<td><a href="mailto:mv.vijesh@gmail.com" target="_new">mv.vijesh@gmail.com</a></td>
-						</tr>
+    <!-- Include the blue imp -->
+    <script src="js/jquery.blueimp-gallery.min.js"></script>
+    <!-- script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script -->
 
-						<tr>
-							<td><img src="images/phone.png" width="25px"></td>
-							<td>+91-9901940119</td>
-						</tr>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
 
-						<tr>
-							<td><img src="images/github.png" width="25px"></td>
-							<td><a href="github/" target="_new">vijeshm.in/github</a></td>
-						</tr>
+    <!-- setup google analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-45616601-1']);
+        _gaq.push(['_setDomainName', 'vijesh.me']);
+        _gaq.push(['_trackPageview']);
 
-						<tr>
-							<td><img src="images/linkedin.png" width="25px"></td>
-							<td><a href="linkedin/" target="_new">vijeshm.in/linkedin</a></td>
-						</tr>
-
-						<tr>
-							<td><img src="images/facebook.png" width="25px"></td>
-							<td><a href="facebook/" target="_new">vijeshm.in/facebook</a></td>
-						</tr>
-
-						<tr>
-							<td><img src="images/twitter.png" width="25px"></td>
-							<td><a href="twitter/" target="_new">vijeshm.in/twitter</a></td>
-						</tr>
-
-						<tr>
-							<td><img src="images/googleplus.png" width="25px"></td>
-							<td><a href="gplus/" target="_new">vijeshm.in/gplus</a></td>
-						</tr>
-					</table>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<p>
-				<a href="http://github.io/" target="_new">github.io</a>
-				|
-				<a href="http://www.css3templates.co.uk/" target="_new">Design from css3templates.co.uk</a>
-				|
-				<a href="http://www.twospy.com/galleriffic/" target="_new">Galleriffic</a>
-			</p>
-		</footer>
-	</div>
-	<!-- javascript at the bottom for fast page loading -->
-	<script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-	<script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-	<script type="text/javascript" src="js/vijeshJS.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$('ul.sf-menu').sooperfish();
-		
-		// We only want these styles applied when javascript is enabled
-		$('div.navigation').css({'width' : '200px', 'float' : 'left'});
-		$('div.galleriffic_content').css('display', 'inline');
-
-		// Initially set opacity on thumbs and add
-		// additional styling for hover effect on thumbs
-		var onMouseOutOpacity = 0.7;
-		$('#thumbs ul.thumbs li').opacityrollover({
-			mouseOutOpacity:   onMouseOutOpacity,
-			mouseOverOpacity:  1.0,
-			fadeSpeed:         'fast',
-			exemptionSelector: '.selected'
-		});
-		
-		// Initialize Advanced Galleriffic Gallery
-		var gallery = $('#thumbs').galleriffic({
-			delay:                     2500,
-			numThumbs:                 15,
-			preloadAhead:              10,
-			enableTopPager:            true,
-			enableBottomPager:         true,
-			maxPagesToShow:            7,
-			imageContainerSel:         '#slideshow',
-			controlsContainerSel:      '#controls',
-			captionContainerSel:       '',
-			loadingContainerSel:       '#loading',
-			renderSSControls:          true,
-			renderNavControls:         true,
-			playLinkText:              'Play',
-			pauseLinkText:             'Pause',
-			prevLinkText:              '&lsaquo; Previous ',
-			nextLinkText:              ' Next &rsaquo;',
-			nextPageLinkText:          'Next &rsaquo;',
-			prevPageLinkText:          '&lsaquo; Prev',
-			enableHistory:             false,
-			autoStart:                 false,
-			syncTransitions:           true,
-			defaultTransitionDuration: 900,
-			onSlideChange:             function(prevIndex, nextIndex) {
-				// 'this' refers to the gallery, which is an extension of $('#thumbs')
-				this.find('ul.thumbs').children()
-					.eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
-					.eq(nextIndex).fadeTo('fast', 1.0);
-			},
-			onPageTransitionOut:       function(callback) {
-				this.fadeTo('fast', 0.0, callback);
-			},
-			onPageTransitionIn:        function() {
-				this.fadeTo('fast', 1.0);
-			}
-		});
-	});
-	</script>
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
+
 </html>
