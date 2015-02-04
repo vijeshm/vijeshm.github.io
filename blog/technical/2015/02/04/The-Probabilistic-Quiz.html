@@ -91,22 +91,38 @@ The remining questions are,<br /> <code>n3 = n2 - n2 / 2</code><br /><code>= n2 
 <p>By the end of the third attempt, you would’ve answered <code>9 - (9/4) = 9 * (3/4)</code> questions right. Thats a whopping 75%! Thats great, for someone who doesnt even know what the questions are. In this case, 75% turns out to be <strong>6.75</strong> questions.</p>
 
 <p>I put this theory to the test. And guess, what.. <strong>I got 7 questions right out of 9!</strong><br />
-But that cant always be that accurate. There <em>must</em> be a method to the madness. There must be a <em>distribution</em>.
-I simulated this “game” of choices in R.<br />
-<code>9</code> questions; <code>4</code> choices each; <code>3</code> attempts; <code>1000</code> experiments. In each experiment, I noted down the number of correct answers. Here’s what the distribution of the number of correct answers looks like.<br /></p>
-
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-
-<p>An interactive plot is coming up shortly, hopefully. Bare with me till then. Once its up and running, you can play around with the input parameters and see how the distribution varies.</p>
+But that cant always be that accurate. There <em>must</em> be a method to the madness. There must be a <em>distribution</em>.<br /></p>
 
 <p><strong>Generalization:</strong><br />
 For a quiz with <code>n</code> questions, <code>c</code> choices and <code>k</code> attempts, the number of remaining right answers is given by:<br />
 <code>n * (k / c)</code><br />
 Wondering how I got this formula? Drop me an email, lets discuss! :)</p>
 
+<p><code>9</code> questions; <code>4</code> choices each; <code>3</code> attempts; <code>1000</code> experiments. In each experiment, I noted down the number of correct answers. Here’s what the distribution of the number of correct answers looks like. Feel free to change the parameters and run simulations.<br /></p>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+<div>
+	Number of questions: <input type="number" id="num_questions" value="9" />
+</div>
+<div>
+	Number of choices: <input type="number" id="num_options" value="4" />
+</div>
+<div>
+	Number of attempts: <input type="number" id="num_quiz_trials" value="3" />
+</div>
+<div>
+	Number of experiments: <input type="number" id="num_sim_trials" value="1000" />
+</div>
+<div>
+	<button id="run_simulation">Run Simulation</button>
+</div>
+<div>
+	Theoritically predicted value using `n * (k / c)` is <b><span id="theoritical"></span></b>.<br />
+</div>
+
 <p>As you can see from the plot, the mean of the distribution is centered around our theoritically determined value. I dont know how to theoritically compute the variance of the plot thought. Any thoughts?</p>
 
-<p>Here’s the code that I used to simulate the experiments. I know, its a bit clumsy. I’m sure there are much better ways to simulate this quiz. Do let me know if you know any of them.</p>
+<p>Initially, I had written an <strong>R</strong> to simulate the experiment. Here’s the code. I know, its a bit clumsy. I’m sure there are much better ways to simulate this quiz. Do let me know if you know any of them.</p>
 
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Proceed with caution, clumsy code ahead! But rest assured, it works.</span>
 <span class="c1"># You&#39;re more than welcome to tweak this code to play around with the parameters.</span>
