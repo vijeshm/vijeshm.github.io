@@ -14,7 +14,6 @@
   <link rel="alternate" type="application/rss+xml" title="Random() Ramblings" href="http://vijesh.me/blog/feed.xml" />
 </head>
 
-
   <body>
 
     <header class="site-header">
@@ -94,8 +93,9 @@ The remining questions are,<br /> <code>n3 = n2 - n2 / 2</code><br /><code>= n2 
 <p>I put this theory to the test. And guess, what.. <strong>I got 7 questions right out of 9!</strong><br />
 But that cant always be that accurate. There <em>must</em> be a method to the madness. There must be a <em>distribution</em>.
 I simulated this “game” of choices in R.<br />
-<code>9</code> questions; <code>4</code> choices each; <code>3</code> attempts; <code>1000</code> experiments. In each experiment, I noted down the number of correct answers. Here’s what the distribution of the number of correct answers looks like.<br />
-<img src="/img/Rplot.png" alt="Distribution of number of correct answers for a quiz containing 9 questions, 4 options each and 3 dependent attempts for a 1000 trials" title="Distribution of number of correct answers for a quiz containing 9 questions, 4 options each and 3 dependent attempts for a 1000 trials" /><br /></p>
+<code>9</code> questions; <code>4</code> choices each; <code>3</code> attempts; <code>1000</code> experiments. In each experiment, I noted down the number of correct answers. Here’s what the distribution of the number of correct answers looks like.<br /></p>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 <p>An interactive plot is coming up shortly, hopefully. Bare with me till then. Once its up and running, you can play around with the input parameters and see how the distribution varies.</p>
 
@@ -218,6 +218,15 @@ g <span class="o">=</span> g <span class="o">+</span> ggtitle<span class="p">(</
 </footer>
 
 
+    
+      <script type="text/javascript" src="/js/jquery.js"></script>
+    
+      <script type="text/javascript" src="/js/highcharts-release/highcharts.js"></script>
+    
+      <script type="text/javascript" src="/js/highcharts-release/modules/exporting.js"></script>
+    
+      <script type="text/javascript" src="/js/blog/the_probabilistic_quiz.js"></script>
+    
   </body>
 
 </html>
