@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The Probabilistic Quiz</title>
+    
+    <meta name="author" content="Vijesh Mohan">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    
+      <link href="/blog/assets/themes/twitter/bootstrap-3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+      <link href="/blog/assets/themes/twitter/css/main.css" rel="stylesheet" type="text/css">
+    
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+  </head>
+
+  <body>
+    <!-- div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/blog">Random() Ramblings</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/blog/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div -->
+    <div class="container">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/blog">Random() Ramblings</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              
+              
+              
+
+
+  
+    
+      
+      	
+      	<li><a href="/blog/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/blog/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="content">
+        
+<div class="page-header">
+  <h1>The Probabilistic Quiz</h1>
+  
+  <div>
+    
+      <span class="post-tag">Probability</span>
+    
+      <span class="post-tag">Prediction</span>
+    
+      <span class="post-tag">Simulation</span>
+    
+  </div>
+  
+  <div class="post-page-date">
+    04 Feb 2015
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="row">
+    <div class="col-md-12 blog-content">
+        <p>
+        "Hello World!"
+        </p>
+
+        <p>
+        Yes, its a tradition, and a good one at that!
+        Whether you like it or not, randomness rules our lives. The degree of randomness may vary, but the inevitable fact remains. This is a blog post about how I predicted the score I would get on a quiz. Rather, the score that I was *supposed* to get if I chose the answers randomly.
+        </p>
+
+        <p>
+        I had taken up a course on <a href="http://coursera.org">Coursera</a>. I must say, I <i>probably</i> learnt quite a bit of probability in the course. It so happened that I was running behind schedule by a large margin for a quiz that was due on a Sunday. I had no clue what the course content was, let alone what the questions meant. And the clock was ticking! Remember? randomness controls us. Then I thought, "Why not apply what I had learnt? Lets see if I can predict the score when I answer questions randomly.".
+        </p>
+
+        <p>
+        Here's how this particular quiz was structured: There were 9 questions with 4 choices each. You get 3 attempts at the quiz. The questions, nor the choices change after each attempt. The order of the choices might change though.
+        </p>
+
+        <p>
+            Lets get predicting!
+        </p>
+
+        <b>Attempt 1:</b>
+        <p>
+            Given a single question, <code>4</code> choices and 1 correct answer, what is the probability that you'll pick the right choice if you're asked to choose randomly? Well, thats simple. Its <code>(1/4)</code>.<br />
+            What if I give you <code>2</code> questions, <code>4</code> choices each and 1 correct answer, what then? <code>(2/4)</code>, isn't it?<br />
+            What if I you have <code>3</code> questions? You'll get <code>3/4</code> questions right. <br />
+            If you had <code>9</code> questions, you'll get <code>9/4</code> right. Hold on to that thought!<br />
+        </p>
+        <b>Attempt 2</b>
+        <p>
+            The questions and choices will not change in this attempt, remember? Good. Now that you've got <code>9/4</code> answers already right, you can just carry them over to this attempt. In this attempt, you'll have to answer <code>9 - 9/4 = 9 * (3/4)</code> questions right. For the sake of brevity, lets call this <code>n1</code>. So, <code>n1 = 9 * (3/4)</code>.<br />
+            In this attempt, lets do something smart. For the <code>n1</code> questions that you got wrong, you know what you had chosen earlier. The same choice cannot be the answer, obviously. Now, your sample space has reduced to <code>3</code>, instead of <code>4</code>. If you choose the answers randomly for these <code>n1</code> questions, how many will you get right? <code>n1 / 3</code>, right!<br />
+            The remaining questions are <code>n2 = n1 - (n1/3) = n1 * (2/3)</code>.<br />
+            Lets substitute for <code>n1</code>: <code>n2 = 9 * (3/4) * (2/3)</code>.<br />
+            Do you *see* a pattern? Exactly!
+        </p>
+
+        <b>Attempt 3:</b><br />
+        <p>
+            The same rules apply here: same questions, same choices. For the remaining <code>n2</code> questions, you know the 2 choices that are wrong. Your sample space is further reduced to 2. Following the same process, you'd get <code>n2 / 2</code> questions right.<br /> 
+            The remining questions are,<br/> <code>n3 = n2 - n2 / 2</code><br /><code>= n2 * (1/2)</code><br /><code>= 9 * (3/4) * (2/3) * (1/2)</code> <br /> <code>= 9/4</code>.
+        </p>
+        
+        <p>
+            By the end of the third attempt, you would've answered <code>9 - (9/4) = 9 * (3/4)</code> questions right. Thats a whopping 75%! Thats great, for someone who doesnt even know what the questions are. In this case, 75% turns out to be <b>6.75</b> questions.
+        </p>
+
+        <p>
+            I put this theory to the test. And guess, what.. <b>I got 7 questions right out of 9!</b><br />
+            But that cant always be that accurate. There *must* be a method to the madness. There must be a <i>distribution</i>.<br />
+        </p>
+
+        <b>Generalization:</b><br />
+        <p>
+            For a quiz with <code>n</code> questions, <code>c</code> choices and <code>k</code> attempts, the number of remaining right answers is given by:<br />
+            <code>n * (k / c)</code><br />
+            Wondering how I got this formula? Drop me an email, lets discuss! :)
+        </p>
+
+        <p>
+            <code>9</code> questions; <code>4</code> choices each; <code>3</code> attempts; <code>1000</code> experiments. In each experiment, I noted down the number of correct answers. Here's what the distribution of the number of correct answers looks like. Feel free to change the parameters and run simulations.<br />
+        </p>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        Number of questions, <code>n</code>: 
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="number" id="num_questions" value="9"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        Number of choices, <code>c</code>: 
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="number" id="num_options" value="4"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        Number of attempts, <code>k</code>: 
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="number" id="num_quiz_trials" value="3"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        Number of experiments:
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control" type="number" id="num_sim_trials" value="1000"/>
+                    </div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <div class="btn btn-primary form-control" id="run_simulation">Run Simulation</div>
+                    </div>
+                </div>
+                <p></p>
+                <div class="row">
+                    <div class="col-md-12">
+                        Theoritically predicted value using <code>n * (k / c)</code> is <b><span id="theoritical"></span></b>.<br /> 
+                        As you can see from the plot, the mean of the distribution is centered around our theoritically determined value. I dont know how to theoritically compute the variance of the plot thought. Any thoughts?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            Initially, I had written an <b>R</b> script to simulate the experiment. Here's the <a href="http://pastebin.com/Wz3wbNyV">code</a>. I know, its a bit clumsy. I'm sure there are much better ways to simulate this quiz. Do let me know if you know any of them. I hope this blog post inspired you to look into the subtle everyday randomness. Until next time.. adios!
+        </p>
+    </div>
+</div>
+    <hr>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="btn-group" role="group">
+          
+            <button type="button" class="btn btn-default disabled">&larr; Previous</button>
+          
+            <button type="button" class="btn btn-default"><a href="/blog/archive.html">Archive</a></button>
+          
+            <button type="button" class="btn btn-default disabled">Next &rarr;</button>
+          
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+</div>
+
+
+      </div>
+    </div> <!-- /container -->
+
+    <!-- div class="container">
+      <div class="row footer">
+        <div class="container">
+          <p>&copy; Vijesh Mohan 2014 
+            with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+            and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          </p>
+        </div>
+      </div>
+    </div -->
+
+    
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-45616601-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+    <!-- Le Scripts -->
+    
+      <script type="text/javascript" src="/blog/assets/themes/twitter/jquery/jquery.min.js"></script>
+    
+      <script type="text/javascript" src="/blog/assets/themes/twitter/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+    
+      <script type="text/javascript" src="/blog/assets/themes/twitter/highcharts-release/highcharts.js"></script>
+    
+      <script type="text/javascript" src="/blog/assets/themes/twitter/highcharts-release/modules/exporting.js"></script>
+    
+      <script type="text/javascript" src="/blog/assets/themes/twitter/js/the_probabilistic_quiz.js"></script>
+    
+  </body>
+</html>
+

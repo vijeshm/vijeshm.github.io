@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Random() Ramblings</title>
+        <description>Random() Ramblings - Vijesh Mohan</description>
+        <link>http://vijeshm.github.io</link>
+        <link>http://vijeshm.github.io</link>
+        <lastBuildDate>2015-02-06T15:51:33+05:30</lastBuildDate>
+        <pubDate>2015-02-06T15:51:33+05:30</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>The Probabilistic Quiz</title>
+                <description>&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-12 blog-content&quot;&gt;
+        &lt;p&gt;
+        &quot;Hello World!&quot;
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        Yes, its a tradition, and a good one at that!
+        Whether you like it or not, randomness rules our lives. The degree of randomness may vary, but the inevitable fact remains. This is a blog post about how I predicted the score I would get on a quiz. Rather, the score that I was *supposed* to get if I chose the answers randomly.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        I had taken up a course on &lt;a href=&quot;http://coursera.org&quot;&gt;Coursera&lt;/a&gt;. I must say, I &lt;i&gt;probably&lt;/i&gt; learnt quite a bit of probability in the course. It so happened that I was running behind schedule by a large margin for a quiz that was due on a Sunday. I had no clue what the course content was, let alone what the questions meant. And the clock was ticking! Remember? randomness controls us. Then I thought, &quot;Why not apply what I had learnt? Lets see if I can predict the score when I answer questions randomly.&quot;.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+        Here&#39;s how this particular quiz was structured: There were 9 questions with 4 choices each. You get 3 attempts at the quiz. The questions, nor the choices change after each attempt. The order of the choices might change though.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            Lets get predicting!
+        &lt;/p&gt;
+
+        &lt;b&gt;Attempt 1:&lt;/b&gt;
+        &lt;p&gt;
+            Given a single question, &lt;code&gt;4&lt;/code&gt; choices and 1 correct answer, what is the probability that you&#39;ll pick the right choice if you&#39;re asked to choose randomly? Well, thats simple. Its &lt;code&gt;(1/4)&lt;/code&gt;.&lt;br /&gt;
+            What if I give you &lt;code&gt;2&lt;/code&gt; questions, &lt;code&gt;4&lt;/code&gt; choices each and 1 correct answer, what then? &lt;code&gt;(2/4)&lt;/code&gt;, isn&#39;t it?&lt;br /&gt;
+            What if I you have &lt;code&gt;3&lt;/code&gt; questions? You&#39;ll get &lt;code&gt;3/4&lt;/code&gt; questions right. &lt;br /&gt;
+            If you had &lt;code&gt;9&lt;/code&gt; questions, you&#39;ll get &lt;code&gt;9/4&lt;/code&gt; right. Hold on to that thought!&lt;br /&gt;
+        &lt;/p&gt;
+        &lt;b&gt;Attempt 2&lt;/b&gt;
+        &lt;p&gt;
+            The questions and choices will not change in this attempt, remember? Good. Now that you&#39;ve got &lt;code&gt;9/4&lt;/code&gt; answers already right, you can just carry them over to this attempt. In this attempt, you&#39;ll have to answer &lt;code&gt;9 - 9/4 = 9 * (3/4)&lt;/code&gt; questions right. For the sake of brevity, lets call this &lt;code&gt;n1&lt;/code&gt;. So, &lt;code&gt;n1 = 9 * (3/4)&lt;/code&gt;.&lt;br /&gt;
+            In this attempt, lets do something smart. For the &lt;code&gt;n1&lt;/code&gt; questions that you got wrong, you know what you had chosen earlier. The same choice cannot be the answer, obviously. Now, your sample space has reduced to &lt;code&gt;3&lt;/code&gt;, instead of &lt;code&gt;4&lt;/code&gt;. If you choose the answers randomly for these &lt;code&gt;n1&lt;/code&gt; questions, how many will you get right? &lt;code&gt;n1 / 3&lt;/code&gt;, right!&lt;br /&gt;
+            The remaining questions are &lt;code&gt;n2 = n1 - (n1/3) = n1 * (2/3)&lt;/code&gt;.&lt;br /&gt;
+            Lets substitute for &lt;code&gt;n1&lt;/code&gt;: &lt;code&gt;n2 = 9 * (3/4) * (2/3)&lt;/code&gt;.&lt;br /&gt;
+            Do you *see* a pattern? Exactly!
+        &lt;/p&gt;
+
+        &lt;b&gt;Attempt 3:&lt;/b&gt;&lt;br /&gt;
+        &lt;p&gt;
+            The same rules apply here: same questions, same choices. For the remaining &lt;code&gt;n2&lt;/code&gt; questions, you know the 2 choices that are wrong. Your sample space is further reduced to 2. Following the same process, you&#39;d get &lt;code&gt;n2 / 2&lt;/code&gt; questions right.&lt;br /&gt; 
+            The remining questions are,&lt;br/&gt; &lt;code&gt;n3 = n2 - n2 / 2&lt;/code&gt;&lt;br /&gt;&lt;code&gt;= n2 * (1/2)&lt;/code&gt;&lt;br /&gt;&lt;code&gt;= 9 * (3/4) * (2/3) * (1/2)&lt;/code&gt; &lt;br /&gt; &lt;code&gt;= 9/4&lt;/code&gt;.
+        &lt;/p&gt;
+        
+        &lt;p&gt;
+            By the end of the third attempt, you would&#39;ve answered &lt;code&gt;9 - (9/4) = 9 * (3/4)&lt;/code&gt; questions right. Thats a whopping 75%! Thats great, for someone who doesnt even know what the questions are. In this case, 75% turns out to be &lt;b&gt;6.75&lt;/b&gt; questions.
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            I put this theory to the test. And guess, what.. &lt;b&gt;I got 7 questions right out of 9!&lt;/b&gt;&lt;br /&gt;
+            But that cant always be that accurate. There *must* be a method to the madness. There must be a &lt;i&gt;distribution&lt;/i&gt;.&lt;br /&gt;
+        &lt;/p&gt;
+
+        &lt;b&gt;Generalization:&lt;/b&gt;&lt;br /&gt;
+        &lt;p&gt;
+            For a quiz with &lt;code&gt;n&lt;/code&gt; questions, &lt;code&gt;c&lt;/code&gt; choices and &lt;code&gt;k&lt;/code&gt; attempts, the number of remaining right answers is given by:&lt;br /&gt;
+            &lt;code&gt;n * (k / c)&lt;/code&gt;&lt;br /&gt;
+            Wondering how I got this formula? Drop me an email, lets discuss! :)
+        &lt;/p&gt;
+
+        &lt;p&gt;
+            &lt;code&gt;9&lt;/code&gt; questions; &lt;code&gt;4&lt;/code&gt; choices each; &lt;code&gt;3&lt;/code&gt; attempts; &lt;code&gt;1000&lt;/code&gt; experiments. In each experiment, I noted down the number of correct answers. Here&#39;s what the distribution of the number of correct answers looks like. Feel free to change the parameters and run simulations.&lt;br /&gt;
+        &lt;/p&gt;
+
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-8&quot;&gt;
+                &lt;div id=&quot;container&quot; style=&quot;min-width: 310px; height: 400px; margin: 0 auto&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        Number of questions, &lt;code&gt;n&lt;/code&gt;: 
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;num_questions&quot; value=&quot;9&quot;/&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        Number of choices, &lt;code&gt;c&lt;/code&gt;: 
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;num_options&quot; value=&quot;4&quot;/&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        Number of attempts, &lt;code&gt;k&lt;/code&gt;: 
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;num_quiz_trials&quot; value=&quot;3&quot;/&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        Number of experiments:
+                    &lt;/div&gt;
+                    &lt;div class=&quot;col-md-6&quot;&gt;
+                        &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;num_sim_trials&quot; value=&quot;1000&quot;/&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-6 col-md-offset-3 text-center&quot;&gt;
+                        &lt;div class=&quot;btn btn-primary form-control&quot; id=&quot;run_simulation&quot;&gt;Run Simulation&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p&gt;&lt;/p&gt;
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;col-md-12&quot;&gt;
+                        Theoritically predicted value using &lt;code&gt;n * (k / c)&lt;/code&gt; is &lt;b&gt;&lt;span id=&quot;theoritical&quot;&gt;&lt;/span&gt;&lt;/b&gt;.&lt;br /&gt; 
+                        As you can see from the plot, the mean of the distribution is centered around our theoritically determined value. I dont know how to theoritically compute the variance of the plot thought. Any thoughts?
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;p&gt;
+            Initially, I had written an &lt;b&gt;R&lt;/b&gt; script to simulate the experiment. Here&#39;s the &lt;a href=&quot;http://pastebin.com/Wz3wbNyV&quot;&gt;code&lt;/a&gt;. I know, its a bit clumsy. I&#39;m sure there are much better ways to simulate this quiz. Do let me know if you know any of them. I hope this blog post inspired you to look into the subtle everyday randomness. Until next time.. adios!
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</description>
+                <link>http://vijeshm.github.io/technical/2015/02/04/The-Probabilistic-Quiz</link>
+                <guid>http://vijeshm.github.io/technical/2015/02/04/The-Probabilistic-Quiz</guid>
+                <pubDate>2015-02-04T00:57:00+05:30</pubDate>
+        </item>
+
+
+</channel>
+</rss>

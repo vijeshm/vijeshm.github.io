@@ -1,0 +1,11 @@
+
+http://vijeshm.github.io/archive.html
+http://vijeshm.github.io/atom.xml
+http://vijeshm.github.io/categories.html
+http://vijeshm.github.io/index.html
+http://vijeshm.github.io/pages.html
+http://vijeshm.github.io/rss.xml
+http://vijeshm.github.io/sitemap.txt
+http://vijeshm.github.io/tags.html
+
+http://vijeshm.github.io/technical/2015/02/04/The-Probabilistic-Quiz
