@@ -5,8 +5,8 @@
         <description>Random() Ramblings - Vijesh Mohan</description>
         <link>http://vijeshm.github.io</link>
         <link>http://vijeshm.github.io</link>
-        <lastBuildDate>2015-02-06T15:51:33+05:30</lastBuildDate>
-        <pubDate>2015-02-06T15:51:33+05:30</pubDate>
+        <lastBuildDate>2015-02-07T23:42:28+05:30</lastBuildDate>
+        <pubDate>2015-02-07T23:42:28+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -69,7 +69,7 @@
         &lt;b&gt;Generalization:&lt;/b&gt;&lt;br /&gt;
         &lt;p&gt;
             For a quiz with &lt;code&gt;n&lt;/code&gt; questions, &lt;code&gt;c&lt;/code&gt; choices and &lt;code&gt;k&lt;/code&gt; attempts, the number of remaining right answers is given by:&lt;br /&gt;
-            &lt;code&gt;n * (k / c)&lt;/code&gt;&lt;br /&gt;
+            &lt;code&gt;n * (k / c), for k &amp;lt; c&lt;/code&gt;&lt;br /&gt;
             Wondering how I got this formula? Drop me an email, lets discuss! :)
         &lt;/p&gt;
 
@@ -123,7 +123,7 @@
                 &lt;p&gt;&lt;/p&gt;
                 &lt;div class=&quot;row&quot;&gt;
                     &lt;div class=&quot;col-md-12&quot;&gt;
-                        Theoritically predicted value using &lt;code&gt;n * (k / c)&lt;/code&gt; is &lt;b&gt;&lt;span id=&quot;theoritical&quot;&gt;&lt;/span&gt;&lt;/b&gt;.&lt;br /&gt; 
+                        Theoritically predicted value using &lt;code&gt;n * (k / c), for k &amp;lt; c&lt;/code&gt; is &lt;b&gt;&lt;span id=&quot;theoritical&quot;&gt;&lt;/span&gt;&lt;/b&gt;.&lt;br /&gt; 
                         As you can see from the plot, the mean of the distribution is centered around our theoritically determined value. I dont know how to theoritically compute the variance of the plot thought. Any thoughts?
                     &lt;/div&gt;
                 &lt;/div&gt;
