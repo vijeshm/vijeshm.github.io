@@ -5,8 +5,8 @@
         <description>Random() Ramblings - Vijesh Mohan</description>
         <link>http://vijeshm.github.io</link>
         <link>http://vijeshm.github.io</link>
-        <lastBuildDate>2015-02-07T23:42:28+05:30</lastBuildDate>
-        <pubDate>2015-02-07T23:42:28+05:30</pubDate>
+        <lastBuildDate>2015-02-09T20:11:44+05:30</lastBuildDate>
+        <pubDate>2015-02-09T20:11:44+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -39,7 +39,7 @@
         &lt;p&gt;
             Given a single question, &lt;code&gt;4&lt;/code&gt; choices and 1 correct answer, what is the probability that you&#39;ll pick the right choice if you&#39;re asked to choose randomly? Well, thats simple. Its &lt;code&gt;(1/4)&lt;/code&gt;.&lt;br /&gt;
             What if I give you &lt;code&gt;2&lt;/code&gt; questions, &lt;code&gt;4&lt;/code&gt; choices each and 1 correct answer, what then? &lt;code&gt;(2/4)&lt;/code&gt;, isn&#39;t it?&lt;br /&gt;
-            What if I you have &lt;code&gt;3&lt;/code&gt; questions? You&#39;ll get &lt;code&gt;3/4&lt;/code&gt; questions right. &lt;br /&gt;
+            What if I give you &lt;code&gt;3&lt;/code&gt; questions? You&#39;ll get &lt;code&gt;3/4&lt;/code&gt; questions right. &lt;br /&gt;
             If you had &lt;code&gt;9&lt;/code&gt; questions, you&#39;ll get &lt;code&gt;9/4&lt;/code&gt; right. Hold on to that thought!&lt;br /&gt;
         &lt;/p&gt;
         &lt;b&gt;Attempt 2&lt;/b&gt;
