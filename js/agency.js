@@ -1455,7 +1455,7 @@ $('[data-parallax]').each(function() {
 });  // end section function
 
 // Building images
-var numberOfImages = 45;
+var numberOfImages = 52;
 var photosDiv = $('#photographs')
 for(var i = 1; i <= numberOfImages; i++) {
 	photosDiv.append('<a href="img/photography/' + i + '.jpg" title="'+ '' + '" data-gallery><img src="img/photography/thumbs/' + i + '.jpg" alt="Banana"></a>');
