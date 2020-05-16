@@ -1,3 +1,7 @@
+// Components list: Nav bar - sensitive to scroll.
+// Photography section - routable carousel
+// Projects section - cards
+
 import { Component } from '@angular/core';
 
 @Component({
