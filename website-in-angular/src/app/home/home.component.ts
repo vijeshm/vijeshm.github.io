@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  private imagePath = '../../assets/images/mylogo.png';
-  private name = 'Vijesh Mohan';
+  public imagePath = '../../assets/images/mylogo.png';
+  public name = 'Vijesh Mohan';
   constructor() { }
 
   ngOnInit(): void {
