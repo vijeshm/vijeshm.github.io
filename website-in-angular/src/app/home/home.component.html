@@ -1,6 +1,37 @@
 <div class="home">
   <div class="content">
-    <div class="image"><img [src]="imagePath"></div>
-    <div class="name">{{ name | uppercase }}</div>
+    <div class="row">
+      <div class="col-9">
+        <div class="intro-content-container">
+          <div class="intro-content">
+            <div class="image"><img [src]="imagePath"></div>
+            <div class="name">{{ name | uppercase }}</div>
+            <div class="tags" *ngIf="tags.length > 0">
+              <span *ngFor="let tag of tags; last as isLast">
+                {{ tag | uppercase }} <span *ngIf="!isLast">|</span>
+              </span>
+            </div>
+            <div class="row social-media-links" *ngIf="socialMediaLinks.length > 0">
+              <div class="col social-media-link" *ngFor="let socialMediaLink of socialMediaLinks">
+                <a [href]="socialMediaLink.socialMediaLink" target="_new"><img [src]="socialMediaLink.iconPath"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="sidebar">
+          <div class="twitter-timeline-container">
+            <a class="twitter-timeline" data-theme="dark" data-width="100%" data-height="50vh" href="https://twitter.com/edbidangi?ref_src=twsrc%5Etfw">Tweets by edbidangi</a>
+          </div>
+          <div class="youtube-playlist-container">
+            <div class="youtube-header">
+              <span class="videos">Videos</span> by Vijesh
+            </div>
+            <iframe width="100%" src="https://www.youtube.com/embed/videoseries?list=PLe7ei_ouCSxVkw9rMxah1CxZ59WbtenWz" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

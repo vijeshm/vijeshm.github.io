@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .home {
     background-image: url('../../assets/images/background-images/1.jpg');
     background-repeat: none;
@@ -11,24 +13,66 @@
     animation-timing-function: ease-in-out;
     height: 100vh;
     text-align: center;
-    position: relative;
+    color: white;
     .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        .intro-content-container {
+            height: 100vh;
+            position: relative;
+            .intro-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
 
-        .name {
-            margin-top: 10px;
-            font-family: 'Century Gothic';
-            font-size: 25px;
-            color: white;
-            text-shadow: 0px 0px 7px black;
+                .image {
+                    text-shadow: 0px 0px 10px white;
+                    filter: drop-shadow(0px 0px 15px black);
+                }
+        
+                .tags {
+                    margin-top: $margin-top-default;
+                }
+        
+                .name {
+                    margin-top: $margin-top-default;
+                    font-family: 'Century Gothic';
+                    font-size: 25px;
+                    text-shadow: 0px 0px 7px black;
+                }
+        
+                .social-media-links {
+                    margin-top: $margin-top-default;
+                    .social-media-link {
+                        img {
+                            width: 25px;
+                            filter: drop-shadow(0px 0px 2px black);
+                        }
+                    }
+                }
+            }
         }
-
-        .image {
-            text-shadow: 0px 0px 10px white;
-            filter: drop-shadow(0px 0px 15px black);
+        .sidebar {
+            .twitter-timeline-container {
+                margin-top: $margin-top-default;
+            }
+            .youtube-playlist-container {
+                padding: 10px 0px;
+                background-color: #292F33;
+                border-radius: 4px;
+                .youtube-header {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    margin-bottom: 10px;
+                    border-bottom: 1px solid rgba(145,165,180,.6);
+                    text-align: left;
+                    font-size: 12px;
+                    .videos {
+                        font-size: 21px;
+                        padding-right: 5px;
+                    }
+                }
+            }
         }
     }
 }
