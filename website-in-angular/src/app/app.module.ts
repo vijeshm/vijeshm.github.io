@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { GithubComponent } from './github/github.component';
+import { SocialMediaLoadingIconComponent } from './social-media-loading-icon/social-media-loading-icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    GithubComponent
+    GithubComponent,
+    SocialMediaLoadingIconComponent
   ],
   imports: [
     BrowserModule,

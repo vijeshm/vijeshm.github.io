@@ -1,5 +1,5 @@
-vijeshm.in
+vijesh.me
 ==========
 
-The code that sits behind my <a href="http://vijeshm.in"/>personal website</a>.
+The code that sits behind my <a href="http://vijesh.me"/>personal website</a>.
 
