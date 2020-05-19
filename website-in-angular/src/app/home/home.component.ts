@@ -25,9 +25,6 @@ export class HomeComponent implements OnInit {
   }, {
     socialMediaLink: 'http://twitter.com/edbidangi',
     iconPath: '../../assets/images/social-media/twitter.png'
-  }, {
-    socialMediaLink: 'https://plus.google.com/114081513617733356807/posts',
-    iconPath: '../../assets/images/social-media/googleplus.png'
   }];
 
   constructor() { }
