@@ -37,6 +37,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _github_github_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./github/github.component */ "./src/app/github/github.component.ts");
+/* harmony import */ var _flickr_flickr_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./flickr/flickr.component */ "./src/app/flickr/flickr.component.ts");
+/* harmony import */ var _linkedin_linkedin_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./linkedin/linkedin.component */ "./src/app/linkedin/linkedin.component.ts");
+/* harmony import */ var _facebook_facebook_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./facebook/facebook.component */ "./src/app/facebook/facebook.component.ts");
+/* harmony import */ var _twitter_twitter_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./twitter/twitter.component */ "./src/app/twitter/twitter.component.ts");
+
+
+
+
 
 
 
@@ -49,6 +57,18 @@ const routes = [{
     }, {
         path: 'github',
         component: _github_github_component__WEBPACK_IMPORTED_MODULE_3__["GithubComponent"]
+    }, {
+        path: 'flickr',
+        component: _flickr_flickr_component__WEBPACK_IMPORTED_MODULE_4__["FlickrComponent"]
+    }, {
+        path: 'linkedin',
+        component: _linkedin_linkedin_component__WEBPACK_IMPORTED_MODULE_5__["LinkedinComponent"]
+    }, {
+        path: 'facebook',
+        component: _facebook_facebook_component__WEBPACK_IMPORTED_MODULE_6__["FacebookComponent"]
+    }, {
+        path: 'twitter',
+        component: _twitter_twitter_component__WEBPACK_IMPORTED_MODULE_7__["TwitterComponent"]
     }];
 class AppRoutingModule {
 }
@@ -125,6 +145,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _github_github_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./github/github.component */ "./src/app/github/github.component.ts");
 /* harmony import */ var _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./social-media-loading-icon/social-media-loading-icon.component */ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts");
+/* harmony import */ var _flickr_flickr_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./flickr/flickr.component */ "./src/app/flickr/flickr.component.ts");
+/* harmony import */ var _linkedin_linkedin_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./linkedin/linkedin.component */ "./src/app/linkedin/linkedin.component.ts");
+/* harmony import */ var _facebook_facebook_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./facebook/facebook.component */ "./src/app/facebook/facebook.component.ts");
+/* harmony import */ var _twitter_twitter_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./twitter/twitter.component */ "./src/app/twitter/twitter.component.ts");
+
+
+
+
 
 
 
@@ -143,7 +171,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
         _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
         _github_github_component__WEBPACK_IMPORTED_MODULE_5__["GithubComponent"],
-        _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_6__["SocialMediaLoadingIconComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_6__["SocialMediaLoadingIconComponent"],
+        _flickr_flickr_component__WEBPACK_IMPORTED_MODULE_7__["FlickrComponent"],
+        _linkedin_linkedin_component__WEBPACK_IMPORTED_MODULE_8__["LinkedinComponent"],
+        _facebook_facebook_component__WEBPACK_IMPORTED_MODULE_9__["FacebookComponent"],
+        _twitter_twitter_component__WEBPACK_IMPORTED_MODULE_10__["TwitterComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
@@ -152,7 +184,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
                     _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"],
                     _github_github_component__WEBPACK_IMPORTED_MODULE_5__["GithubComponent"],
-                    _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_6__["SocialMediaLoadingIconComponent"]
+                    _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_6__["SocialMediaLoadingIconComponent"],
+                    _flickr_flickr_component__WEBPACK_IMPORTED_MODULE_7__["FlickrComponent"],
+                    _linkedin_linkedin_component__WEBPACK_IMPORTED_MODULE_8__["LinkedinComponent"],
+                    _facebook_facebook_component__WEBPACK_IMPORTED_MODULE_9__["FacebookComponent"],
+                    _twitter_twitter_component__WEBPACK_IMPORTED_MODULE_10__["TwitterComponent"]
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -162,6 +198,80 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
             }]
     }], null, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/facebook/facebook.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/facebook/facebook.component.ts ***!
+  \************************************************/
+/*! exports provided: FacebookComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacebookComponent", function() { return FacebookComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../social-media-loading-icon/social-media-loading-icon.component */ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts");
+
+
+
+class FacebookComponent {
+    constructor() { }
+    ngOnInit() {
+        window.location.href = 'http://facebook.com/mv.vijesh';
+    }
+}
+FacebookComponent.ɵfac = function FacebookComponent_Factory(t) { return new (t || FacebookComponent)(); };
+FacebookComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FacebookComponent, selectors: [["app-facebook"]], decls: 1, vars: 0, consts: [["social-media-name", "Facebook"]], template: function FacebookComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-social-media-loading-icon", 0);
+    } }, directives: [_social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__["SocialMediaLoadingIconComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZhY2Vib29rL2ZhY2Vib29rLmNvbXBvbmVudC5zY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FacebookComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-facebook',
+                templateUrl: './facebook.component.html',
+                styleUrls: ['./facebook.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
+/***/ "./src/app/flickr/flickr.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/flickr/flickr.component.ts ***!
+  \********************************************/
+/*! exports provided: FlickrComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlickrComponent", function() { return FlickrComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../social-media-loading-icon/social-media-loading-icon.component */ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts");
+
+
+
+class FlickrComponent {
+    constructor() { }
+    ngOnInit() {
+        window.location.href = 'http://flickr.com/vijeshm';
+    }
+}
+FlickrComponent.ɵfac = function FlickrComponent_Factory(t) { return new (t || FlickrComponent)(); };
+FlickrComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FlickrComponent, selectors: [["app-flickr"]], decls: 1, vars: 0, consts: [["social-media-name", "Flickr"]], template: function FlickrComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-social-media-loading-icon", 0);
+    } }, directives: [_social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__["SocialMediaLoadingIconComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2ZsaWNrci9mbGlja3IuY29tcG9uZW50LnNjc3MifQ== */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](FlickrComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-flickr',
+                templateUrl: './flickr.component.html',
+                styleUrls: ['./flickr.component.scss']
+            }]
+    }], function () { return []; }, null); })();
 
 
 /***/ }),
@@ -288,9 +398,6 @@ class HomeComponent {
             }, {
                 socialMediaLink: 'http://twitter.com/edbidangi',
                 iconPath: '../../assets/images/social-media/twitter.png'
-            }, {
-                socialMediaLink: 'https://plus.google.com/114081513617733356807/posts',
-                iconPath: '../../assets/images/social-media/googleplus.png'
             }];
     }
     ngOnInit() {
@@ -360,6 +467,43 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
+/***/ "./src/app/linkedin/linkedin.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/linkedin/linkedin.component.ts ***!
+  \************************************************/
+/*! exports provided: LinkedinComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LinkedinComponent", function() { return LinkedinComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../social-media-loading-icon/social-media-loading-icon.component */ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts");
+
+
+
+class LinkedinComponent {
+    constructor() { }
+    ngOnInit() {
+        window.location.href = 'http://linkedin.com/pub/vijesh-m/48/683/780';
+    }
+}
+LinkedinComponent.ɵfac = function LinkedinComponent_Factory(t) { return new (t || LinkedinComponent)(); };
+LinkedinComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: LinkedinComponent, selectors: [["app-linkedin"]], decls: 1, vars: 0, consts: [["social-media-name", "LinkedIn"]], template: function LinkedinComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-social-media-loading-icon", 0);
+    } }, directives: [_social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__["SocialMediaLoadingIconComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xpbmtlZGluL2xpbmtlZGluLmNvbXBvbmVudC5zY3NzIn0= */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](LinkedinComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-linkedin',
+                templateUrl: './linkedin.component.html',
+                styleUrls: ['./linkedin.component.scss']
+            }]
+    }], function () { return []; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts":
 /*!**********************************************************************************!*\
   !*** ./src/app/social-media-loading-icon/social-media-loading-icon.component.ts ***!
@@ -407,6 +551,43 @@ SocialMediaLoadingIconComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"],
             args: ['social-media-name']
         }] }); })();
+
+
+/***/ }),
+
+/***/ "./src/app/twitter/twitter.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/twitter/twitter.component.ts ***!
+  \**********************************************/
+/*! exports provided: TwitterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TwitterComponent", function() { return TwitterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../social-media-loading-icon/social-media-loading-icon.component */ "./src/app/social-media-loading-icon/social-media-loading-icon.component.ts");
+
+
+
+class TwitterComponent {
+    constructor() { }
+    ngOnInit() {
+        window.location.href = 'http://twitter.com/edbidangi';
+    }
+}
+TwitterComponent.ɵfac = function TwitterComponent_Factory(t) { return new (t || TwitterComponent)(); };
+TwitterComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TwitterComponent, selectors: [["app-twitter"]], decls: 1, vars: 0, consts: [["social-media-name", "Twitter"]], template: function TwitterComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-social-media-loading-icon", 0);
+    } }, directives: [_social_media_loading_icon_social_media_loading_icon_component__WEBPACK_IMPORTED_MODULE_1__["SocialMediaLoadingIconComponent"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3R3aXR0ZXIvdHdpdHRlci5jb21wb25lbnQuc2NzcyJ9 */"] });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](TwitterComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+                selector: 'app-twitter',
+                templateUrl: './twitter.component.html',
+                styleUrls: ['./twitter.component.scss']
+            }]
+    }], function () { return []; }, null); })();
 
 
 /***/ }),
