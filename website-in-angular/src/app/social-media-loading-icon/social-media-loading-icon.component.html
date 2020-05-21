@@ -1,8 +1,9 @@
 <div class="spinner-container">
   <div class="d-flex justify-content-center">
-    <div class="spinner-grow" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
+    <mat-progress-spinner
+      mode="indeterminate"
+      diameter="30">
+    </mat-progress-spinner>
   </div>
   <div class="loading-message">
     Redirecting to {{ socialMediaName }}

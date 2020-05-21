@@ -11,7 +11,7 @@ import { LinkedinComponent } from './linkedin/linkedin.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { TwitterComponent } from './twitter/twitter.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatProgressSpinner
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
