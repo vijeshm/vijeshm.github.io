@@ -10,7 +10,7 @@ export class GithubComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    window.location.href = 'http://github.com/vijeshm';
+    // window.location.href = 'http://github.com/vijeshm';
   }
 
 }

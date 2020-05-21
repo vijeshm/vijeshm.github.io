@@ -10,6 +10,8 @@ import { FlickrComponent } from './flickr/flickr.component';
 import { LinkedinComponent } from './linkedin/linkedin.component';
 import { FacebookComponent } from './facebook/facebook.component';
 import { TwitterComponent } from './twitter/twitter.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TwitterComponent } from './twitter/twitter.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatProgressSpinner
   ],
   providers: [],
   bootstrap: [AppComponent]

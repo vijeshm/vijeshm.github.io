@@ -1,5 +1,21 @@
 @import '../../variables.scss';
 
+@media only screen and (width: 576px) {
+    // Both col-xs-12 and col-sm-9 classes were applied.
+    // For the borderline pixel value of 576, where the transition of bootstrap classes will happen, the sidebar will get hidden, but the sm class wouldn't have been applied.
+    // So, at this pixel value, we need to force the width to go to 100%.
+    .adjust-responsive-width-by-media-query {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 .home {
     background-image: url('../../assets/images/background-images/1.jpg');
     background-repeat: none;
