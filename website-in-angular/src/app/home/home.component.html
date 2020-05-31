@@ -16,6 +16,16 @@
                 <a [href]="socialMediaLink.socialMediaLink" target="_new"><img [src]="socialMediaLink.iconPath"/></a>
               </div>
             </div>
+            <div class="row">
+              <div class="col">
+                <app-section-card *ngFor="let section of sections"
+                  [section-icon-path]="section.sectionIconPath"
+                  [label]="section.label"
+                  [state]="section.stateUrl"
+                  description="hello">
+                </app-section-card>
+              </div>
+            </div>
           </div>
         </div>
       </div>

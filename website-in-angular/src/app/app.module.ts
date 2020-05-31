@@ -12,6 +12,7 @@ import { FacebookComponent } from './facebook/facebook.component';
 import { TwitterComponent } from './twitter/twitter.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { SectionCardComponent } from './section-card/section-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FlickrComponent,
     LinkedinComponent,
     FacebookComponent,
-    TwitterComponent
+    TwitterComponent,
+    SectionCardComponent
   ],
   imports: [
     BrowserModule,

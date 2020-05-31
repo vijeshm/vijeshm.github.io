@@ -17,7 +17,7 @@
 }
 
 .home {
-    background-image: url('../../assets/images/background-images/1.jpg');
+    background-image: url('../../assets/images/background-images/7.jpg');
     background-repeat: none;
     background-attachment: fixed;
     background-position: center top;
@@ -25,7 +25,7 @@
     -moz-background-size: cover;
     background-size: cover;
     backface-visibility: hidden;
-    animation: slideBg 20s linear infinite 0s;
+    _animation: slideBg 20s linear infinite 0s;
     animation-timing-function: ease-in-out;
     height: 100vh;
     text-align: center;
@@ -63,6 +63,12 @@
                         img {
                             width: 25px;
                             filter: drop-shadow(0px 0px 2px black);
+                            transition: width 0.2s ease-in-out;
+                        }
+
+                        img:hover {
+                            animation: rotate360 0.2s linear;
+                            width: 30px;
                         }
                     }
                 }
@@ -90,6 +96,20 @@
                 }
             }
         }
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
 

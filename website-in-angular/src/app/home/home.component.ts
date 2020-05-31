@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ISocialMediaElement } from '../types';
+import { ISocialMediaElement, ISection } from '../types';
 
 @Component({
   selector: 'app-home',
@@ -26,11 +26,19 @@ export class HomeComponent implements OnInit {
     socialMediaLink: 'http://twitter.com/edbidangi',
     iconPath: '../../assets/images/social-media/twitter.png'
   }];
+  public sections: ISection[] = [{
+    sectionIconPath: '../../assets/images/section-cards/photography.jpg',
+    label: 'Photography',
+    stateUrl: '/photography'
+  }];
 
   constructor() { }
 
   ngOnInit(): void {
-    (window as any).twttr.widgets.load();
+    const windowAsAny = window as any;
+    if (windowAsAny.twttr) {
+      windowAsAny.twttr.widgets.load();
+    }
   }
 
 }
