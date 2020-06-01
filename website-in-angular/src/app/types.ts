@@ -6,5 +6,6 @@ export interface ISocialMediaElement {
 export interface ISection {
     sectionIconPath: string;
     label: string;
+    description?: string;
     stateUrl: string;
 }

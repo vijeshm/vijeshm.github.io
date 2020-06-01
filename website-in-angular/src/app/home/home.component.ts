@@ -29,7 +29,23 @@ export class HomeComponent implements OnInit {
   public sections: ISection[] = [{
     sectionIconPath: '../../assets/images/section-cards/photography.jpg',
     label: 'Photography',
+    description: '"You don\'t take a photograph, you make it." - Ansel Adams',
     stateUrl: '/photography'
+  }, {
+    sectionIconPath: '../../assets/images/section-cards/projects.png',
+    label: 'Projects',
+    description: '"If you optimize everything, you will always be unhappy." - Donald Knuth',
+    stateUrl: '/projects'
+  }, {
+    sectionIconPath: '../../assets/images/section-cards/fyp.png',
+    label: 'Research',
+    description: '"If we knew what it was we were doing, it would not be called research, would it?" - Albert Einstein',
+    stateUrl: '/research'
+  }, {
+    sectionIconPath: '../../assets/images/section-cards/blog.jpg',
+    label: 'Blog',
+    description: '"If we knew what it was we were doing, it would not be called research, would it?" - Albert Einstein',
+    stateUrl: '/blog'
   }];
 
   constructor() { }

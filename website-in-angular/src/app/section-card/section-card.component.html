@@ -1,5 +1,7 @@
 <div class="section-card">
-  <img class="section-icon" [src]="sectionIconPath" (click)="navigateToState()"/>
-  <div class="label">{{ label }}</div>
-  <div class="description">{{ description }}</div>
+  <div class="image-container">
+    <img *ngIf="sectionIconPath" class="section-icon" [src]="sectionIconPath" (click)="navigateToState()"/>
+  </div>
+  <div *ngIf="label" class="label">{{ label }}</div>
+  <div *ngIf="description" class="description">{{ description }}</div>
 </div>

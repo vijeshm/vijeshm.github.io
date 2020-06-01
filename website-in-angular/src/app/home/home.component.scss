@@ -27,19 +27,20 @@
     backface-visibility: hidden;
     _animation: slideBg 20s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    height: 100vh;
+    _height: 100vh;
     text-align: center;
     color: white;
     .content {
         .intro-content-container {
-            height: 100vh;
+            _height: 100vh;
             position: relative;
             .intro-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
+                _position: absolute;
+                _top: 50%;
+                _left: 50%;
+                _transform: translate(-50%, -50%);
+                _width: 100%;
+                margin-top: 50px;
 
                 .image {
                     text-shadow: 0px 0px 10px white;
@@ -69,6 +70,20 @@
                         img:hover {
                             animation: rotate360 0.2s linear;
                             width: 30px;
+                        }
+                    }
+                }
+
+                .sections-row {
+                    margin-top: 10px;
+                    .section-card-container {
+                        display: inline-block;
+                        margin: 5px;
+                    }
+                    .col {
+                        app-section-card {
+                            display: flex;
+                            justify-content: center;
                         }
                     }
                 }
