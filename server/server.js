@@ -3,7 +3,7 @@ const express = require("express");
 const fs = require("fs");
 
 const port = process.env.PORT || 3000;
-const publicPath = path.join(__dirname, "..", "build");
+const publicPath = path.join(__dirname, "..", "docs");
 const publicUrl = process.env.PUBLIC_URL || `http://localhost:${port}`;
 const indexHtml = path.join(publicPath, "index.html");
 
