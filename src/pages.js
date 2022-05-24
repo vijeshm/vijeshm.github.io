@@ -4,7 +4,7 @@ import { Link, useLocation, Outlet } from "react-router-dom";
 export function Home() {
     return(
         <div>
-            <h1>Company Website</h1>
+            <h1>Company Website - Hello world</h1>
             <nav>
                 <Link to="about">About</Link>
                 <Link to="events">Events</Link>
