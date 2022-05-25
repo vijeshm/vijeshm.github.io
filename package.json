@@ -46,6 +46,12 @@
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build && git add build docs"
+    }
   }
 }
