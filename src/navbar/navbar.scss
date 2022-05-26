@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+.navbar {
+  position: sticky;
+  box-shadow: 0px 0px 10px #aaaaaa;
+  display: flex;
+  .logo {
+    margin-left: $top-level-margin-left;
+    align-self: center;
+  }
+  .col {
+    flex: 1;
+    display: flex;
+    .nav-items {
+      text-align: right;
+      flex: 1;
+      display: flex;
+      // flex-direction: row;
+      align-items: center;
+      justify-content: right;
+      .nav-item {
+        // display: inline-block;
+        // align-items: center;
+        // justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.navbar.light {
+  background-color: $LIGHT-background-color;
+  color: $LIGHT-text-color;
+}
+.navbar.dark {
+  background-color: $DARK-background-color;
+  color: $DARK-text-color;
+}
