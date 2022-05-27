@@ -3,7 +3,6 @@
 
 .intro {
   height: 200vh;
-  // padding-left: calc($top-level-padding-left + 15px);
   .hi {
     padding-top: 200px;
   }
@@ -14,6 +13,17 @@
   }
   .tagline {
     margin-top: 5px;
+  }
+  .description {
+    font-size: 13px;
+    margin-top: 10px;
+    width: 60%;
+  }
+  .tag-cloud {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    _border: 1px solid red;
   }
 }
 .intro.dark {

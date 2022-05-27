@@ -1,0 +1,20 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.intro-card {
+  position: absolute;
+  z-index: 1;
+  top: 200px;
+  left: 70%;
+  width: 1000px;
+  height: 650px;
+  background-color: $theme-blue;
+  border-radius: 50px;
+  transform: rotate(45deg);
+}
+.intro-card.dark {
+  @include DarkMode;
+}
+.intro-card.light {
+  @include LightMode;
+}

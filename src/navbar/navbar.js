@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Row, Col, Container } from "react-grid-system";
 import { Switch } from "../switch/switch";
 import "./navbar.scss";
-export function Navbar({ onModeChange }) {
-  let [mode, setMode] = useState("light");
+export function Navbar({ onModeChange, initMode }) {
+  let [mode, setMode] = useState(initMode);
   let changeMode = (currentValue) => {
     let newMode = currentValue ? "dark" : "light";
     setMode(newMode);
@@ -37,6 +37,7 @@ export function Navbar({ onModeChange }) {
               offLabel={"Light"}
               disabled={false}
               onChange={changeMode}
+              initialValue={initMode === 'dark'}
             ></Switch>
           </div>
         </Col>
