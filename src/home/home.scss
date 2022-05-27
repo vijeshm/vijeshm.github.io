@@ -1,10 +1,9 @@
 @import "../variables.scss";
 
 .container {
-    background-color: $LIGHT-background-color;
-    height: 100vh;
+  background-color: $LIGHT-background-color;
 }
 
 .container.dark {
-    background-color: $DARK_background-color;
+  background-color: $DARK_background-color;
 }

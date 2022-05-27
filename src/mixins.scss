@@ -1,0 +1,19 @@
+@mixin DarkMode {
+  background-color: $DARK-background-color;
+  color: $DARK-text-color;
+}
+
+@mixin LightMode {
+  background-color: $LIGHT-background-color;
+  color: $LIGHT-text-color;
+}
+
+@mixin SideLine {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 0px;
+  border-right: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+}

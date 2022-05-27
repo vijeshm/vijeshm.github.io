@@ -1,0 +1,24 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.intro {
+  height: 200vh;
+  // padding-left: calc($top-level-padding-left + 15px);
+  .hi {
+    padding-top: 200px;
+  }
+  .vijesh-mohan {
+    margin-top: 5px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .tagline {
+    margin-top: 5px;
+  }
+}
+.intro.dark {
+  @include DarkMode;
+}
+.intro.light {
+  @include LightMode;
+}

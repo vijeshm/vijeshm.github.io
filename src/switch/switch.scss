@@ -1,13 +1,14 @@
 .switch-container {
   text-align: reset;
   cursor: pointer;
-  width: 50px;
+  width: 60px;
   height: 25px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   .text-container {
-    width: 25px;
+    text-align: center;
+    width: 30px;
     height: 20px;
     border-radius: 30px;
     vertical-align: middle;
