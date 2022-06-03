@@ -1,56 +1,59 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-.social-links-container {
-  height: 200vh;
-  .social-links {
-    position: fixed;
-    bottom: 0px;
-    left: 3%;
-    .social-link {
-      a {
-        display: block;
-        height: 35px;
-        svg {
-          position: relative;
-          width: 20px;
-          height: 20px;
-          transition: bottom 0.25s;
-          margin-top: 5px;
-          margin-bottom: 5px;
-          bottom: 0px;
+.social-links-row {
+  height: 100%;
+  .social-links-container {
+    height: 100%;
+    .social-links {
+      position: fixed;
+      bottom: 0px;
+      left: 3%;
+      .social-link {
+        a {
+          display: block;
+          height: 35px;
+          svg {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            transition: bottom 0.25s;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            bottom: 0px;
+          }
+        }
+        a:hover {
+          svg {
+            bottom: 5px;
+          }
         }
       }
-      a:hover {
-        svg {
-          bottom: 5px;
-        }
+      .social-link:last-child::after {
+        @include SideLine;
+      }
+    }
+  }
+  .social-links-container.dark {
+    @include DarkMode;
+    .social-link {
+      svg {
+        stroke: $DARK-text-color;
       }
     }
     .social-link:last-child::after {
-      @include SideLine;
+      border-color: $DARK-text-color;
     }
   }
-}
-.social-links-container.dark {
-  @include DarkMode;
-  .social-link {
-    svg {
-      stroke: $DARK-text-color;
+  .social-links-container.light {
+    @include LightMode;
+    .social-link {
+      svg {
+        stroke: $LIGHT-text-color;
+      }
     }
-  }
-  .social-link:last-child::after {
-    border-color: $DARK-text-color;
-  }
-}
-.social-links-container.light {
-  @include LightMode;
-  .social-link {
-    svg {
-      stroke: $LIGHT-text-color;
+    .social-link:last-child::after {
+      border-color: $LIGHT-text-color;
     }
-  }
-  .social-link:last-child::after {
-    border-color: $LIGHT-text-color;
   }
 }

@@ -3,7 +3,7 @@ import "./social-links.scss";
 
 export function SocialLinks({ mode }) {
   return (
-    <Row nogutter>
+    <Row nogutter className="social-links-row">
       <Col sm={12}>
         <div className={`social-links-container ${mode}`}>
           <div className="social-links">

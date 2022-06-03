@@ -8,7 +8,7 @@ import { IntroCard } from "../introCard/intro-card";
 
 export function Home() {
   let now = new Date();
-  let defaultMode = now.getHours() >= 18 ? 'dark' : 'light';
+  let defaultMode = now.getHours() >= 18 ? "dark" : "light";
   let [mode, setMode] = useState(defaultMode);
   let onModeChangeHandler = (mode) => {
     setMode(mode);
@@ -21,8 +21,17 @@ export function Home() {
           <SocialLinks mode={mode}></SocialLinks>
         </Col>
         <Col sm={11}>
-          <Intro mode={mode}></Intro>
-          <IntroCard></IntroCard>
+          <Row>
+            <Col sm={12}>
+              <Intro mode={mode}></Intro>
+              <IntroCard></IntroCard>
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={12}>
+              About me.
+            </Col>
+          </Row>
         </Col>
       </Row>
     </div>
