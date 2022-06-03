@@ -12,6 +12,14 @@ export function Navbar({ onModeChange, initMode }) {
       onModeChange(newMode);
     }
   };
+  let scrollToAboutMe = () => {
+    const section = document.querySelector(".about-me-container");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+  let scrollToHome = () => {
+    const section = document.querySelector(".intro");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   return (
     <Container fluid>
       <Row className={`navbar ${mode}`}>
@@ -20,13 +28,16 @@ export function Navbar({ onModeChange, initMode }) {
             src="./assets/images/logo.png"
             width="60px"
             className="logo"
+            onClick={() => scrollToHome()}
           ></img>
         </Col>
         <Col sm={4} className="col"></Col>
         <Col sm={6} className="col">
           <div className="nav-items">
-            <div className="nav-item">Home</div>
-            <div className="nav-item">About me</div>
+            <div className="nav-item" onClick={() => scrollToHome()}>Home</div>
+            <div className="nav-item" onClick={() => scrollToAboutMe()}>
+              About me
+            </div>
             <div className="nav-item">Projects</div>
             <div className="nav-item">Photography</div>
             <div className="nav-item">Blog</div>
@@ -37,7 +48,7 @@ export function Navbar({ onModeChange, initMode }) {
               offLabel={"Light"}
               disabled={false}
               onChange={changeMode}
-              initialValue={initMode === 'dark'}
+              initialValue={initMode === "dark"}
             ></Switch>
           </div>
         </Col>

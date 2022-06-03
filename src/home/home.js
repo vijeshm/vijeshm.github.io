@@ -5,6 +5,7 @@ import { Intro } from "../intro/intro";
 import { Row, Col } from "react-grid-system";
 import { SocialLinks } from "../SocialLinks/social-links";
 import { IntroCard } from "../introCard/intro-card";
+import { AboutMe } from "../about-me/about-me";
 
 export function Home() {
   let now = new Date();
@@ -29,7 +30,7 @@ export function Home() {
           </Row>
           <Row>
             <Col sm={12}>
-              About me.
+              <AboutMe mode={mode}></AboutMe>
             </Col>
           </Row>
         </Col>

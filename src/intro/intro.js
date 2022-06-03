@@ -47,7 +47,7 @@ export function Intro({ mode }) {
         <div className="tagline">Engineer. Photographer.</div>
         <div className="description">
           I'm a senior frontend engineer, focused on writing awesome code and
-          building performant webpages. I'm currently working as a lead at{" "}
+          building performant webpages. I'm currently working as a frontend lead at{" "}
           <a href="https://akamai.com" target="_blank">
             Akamai Technologies
           </a>
