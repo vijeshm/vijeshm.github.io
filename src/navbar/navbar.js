@@ -20,6 +20,10 @@ export function Navbar({ onModeChange, initMode }) {
     const section = document.querySelector(".intro");
     section.scrollIntoView({ behavior: "smooth", block: "start" });
   }
+  let scrollToProjects = () => {
+    const section = document.querySelector(".projects-container");
+    section.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
   return (
     <Container fluid>
       <Row className={`navbar ${mode}`}>
@@ -38,7 +42,7 @@ export function Navbar({ onModeChange, initMode }) {
             <div className="nav-item" onClick={() => scrollToAboutMe()}>
               About me
             </div>
-            <div className="nav-item">Projects</div>
+            <div className="nav-item" onClick={() => scrollToProjects()}>Projects</div>
             <div className="nav-item">Photography</div>
             <div className="nav-item">Blog</div>
           </div>

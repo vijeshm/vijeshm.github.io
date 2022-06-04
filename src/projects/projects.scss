@@ -1,0 +1,18 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.projects-container {
+  padding-top: 50px;
+  .header-container {
+    text-align: center;
+    .header {
+      @include header;
+    }
+  }
+}
+.projects-container.dark {
+  @include DarkMode;
+}
+.about-me-container.light {
+  @include LightMode;
+}

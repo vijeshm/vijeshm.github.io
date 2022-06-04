@@ -1,0 +1,80 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.project-card-container {
+  margin-top: 40px;
+  .project-card-img {
+    margin-left: 5px;
+    width: 50%;
+    border-radius: 5px;
+    filter: grayscale(100%)
+  }
+  .project-card-img:hover {
+    transition: 0.4s;
+    filter: grayscale(0%);
+  }
+  .project-details-container {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    margin-right: 100px;
+    .project-name {
+      text-align: right;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    .project-description {
+      padding: 20px;
+      margin-top: 20px;
+      text-align: right;
+      border-radius: 5px;
+    }
+    .tags {
+      margin-top: 20px;
+      text-align: right;
+      font-family: monospace;
+      .tag {
+        padding-left: 10px;
+      }
+    }
+    .github-link {
+      margin-top: 20px;
+      text-align: right;
+      svg {
+        width: 20px;
+      }
+    }
+  }
+}
+.project-card-container.dark {
+  @include DarkMode;
+  .project-card-img {
+    border: 2px solid $DARK-text-color;
+  }
+  .project-details-container {
+    .project-description {
+      background-color: $DARK-lighter-color-1;
+    }
+    .github-link {
+      svg {
+        stroke: $DARK-text-color;
+      }
+    }
+  }
+}
+.project-card-container.light {
+  @include LightMode;
+  .project-card-img {
+    border: 2px solid $LIGHT-text-color;
+  }
+  .project-details-container {
+    .project-description {
+      background-color: $LIGHT-darker-color-1;
+    }
+    .github-link {
+      svg {
+        stroke: $LIGHT-text-color;
+      }
+    }
+  }
+}

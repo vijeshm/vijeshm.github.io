@@ -1,3 +1,4 @@
+@import "./variables.scss";
 @mixin DarkMode {
   background-color: $DARK-background-color;
   color: $DARK-text-color;
@@ -16,4 +17,41 @@
   border-right: 1px solid;
   margin-left: auto;
   margin-right: auto;
+}
+
+@mixin header {
+  text-align: center;
+  font-size: 25px;
+  &::before {
+    content: "";
+    width: 40%;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+    top: -8px;
+    opacity: 25%;
+  }
+  &.dark::before {
+    background-color: $DARK-text-color;
+  }
+  &.light::before {
+    background-color: $LIGHT-text-color;
+  }
+  &::after {
+    content: "";
+    width: 40%;
+    height: 1px;
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    top: -8px;
+    opacity: 25%;
+  }
+  &.dark::after {
+    background-color: $DARK-text-color;
+  }
+  &.light::after {
+    background-color: $LIGHT-text-color;
+  }
 }

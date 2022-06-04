@@ -2,7 +2,14 @@
 @import "../mixins.scss";
 
 .about-me-container {
-  padding-top: 100px;
+  .header-container {
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    .header {
+      @include header;
+    }
+  }
   .profile {
     width: 200px;
     border-radius: 200px;
@@ -16,6 +23,6 @@
 .about-me-container.dark {
   @include DarkMode;
 }
-.social-links-container.light {
+.about-me-container.light {
   @include LightMode;
 }

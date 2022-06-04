@@ -7,11 +7,24 @@ export function AboutMe({ mode }) {
       <Col sm={12}>
         <div className={`about-me-container ${mode}`}>
           <Row>
+            <Col sm={12}>
+              <div className="header-container">
+                <span className={`header ${mode}`}>About Me</span>
+              </div>
+            </Col>
+          </Row>
+          <Row>
             <Col sm={3}>
-              <img className="profile" src="./assets/images/vijeshmohan.jpeg" alt="Profile"/>
+              <img
+                className="profile"
+                src="./assets/images/vijeshmohan.jpeg"
+                alt="Profile"
+              />
             </Col>
             <Col sm={6}>
-              <div className="snippet">Hello! I'm Vijesh. I hail from Bengaluru, India.</div>
+              <div className="snippet">
+                Hello! I'm Vijesh. I hail from Bengaluru, India.
+              </div>
               <div className="snippet">
                 I primarily develop web pages and I love typescript! I enjoy
                 solving problems in data structures and algorithms. I have a

@@ -3,9 +3,10 @@ import { Navbar } from "../navbar/navbar";
 import { useState } from "react";
 import { Intro } from "../intro/intro";
 import { Row, Col } from "react-grid-system";
-import { SocialLinks } from "../SocialLinks/social-links";
-import { IntroCard } from "../introCard/intro-card";
+import { SocialLinks } from "../social-links/social-links";
+import { IntroCard } from "../intro-card/intro-card";
 import { AboutMe } from "../about-me/about-me";
+import { Projects } from "../projects/projects";
 
 export function Home() {
   let now = new Date();
@@ -31,6 +32,7 @@ export function Home() {
           <Row>
             <Col sm={12}>
               <AboutMe mode={mode}></AboutMe>
+              <Projects mode={mode}></Projects>
             </Col>
           </Row>
         </Col>
