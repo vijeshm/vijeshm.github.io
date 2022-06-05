@@ -7,6 +7,7 @@ import { SocialLinks } from "../social-links/social-links";
 import { IntroCard } from "../intro-card/intro-card";
 import { AboutMe } from "../about-me/about-me";
 import { Projects } from "../projects/projects";
+import { StopWatch } from "../stopwatch/stopwatch";
 
 export function Home() {
   let now = new Date();
@@ -33,6 +34,7 @@ export function Home() {
             <Col sm={12}>
               <AboutMe mode={mode}></AboutMe>
               <Projects mode={mode}></Projects>
+              <StopWatch></StopWatch>
             </Col>
           </Row>
         </Col>
